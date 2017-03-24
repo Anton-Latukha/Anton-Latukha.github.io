@@ -11,6 +11,14 @@
 
     
     <url>
+     <loc>/bio/</loc>
+     <lastmod>2017-03-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/about/</loc>
      <lastmod>2017-03-25</lastmod>
      <changefreq>daily</changefreq>
