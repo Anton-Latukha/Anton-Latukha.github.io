@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to Anton Latukha's place\n\n\nPrimer purpose of this site, for now, is to host my \nbio\n.\nI have a lot of notes and personal documentation of somewhat high tech value and plan to release it in form of theme posts.",
+            "text": "Welcome to Anton Latukha's place\n\u00b6\n\n\nPrimer purpose of this site, for now, is to host my \nbio\n.\nI have a lot of notes and personal documentation of somewhat high tech value and plan to release it in form of theme posts.",
             "title": "Home"
         },
         {
@@ -11,103 +11,193 @@
             "title": "Welcome to Anton Latukha's place"
         },
         {
-            "location": "/bio/",
-            "text": "Biography\n\n\nI am a versatile guy, that live 27/7 in Linux and Open Source for last 10 years.\n\n\nDamn good system administrator and naturally grown to achieve DevOps levels and beyond.\nI don\u2019t know how guys today can be called DevOps, that not having at least great knowledge in Linux/OS systems. While their work is automating those systems.\n\n\nThou, if look at reality, volume of skills I have and knowledge, depth and scale of thinking, some business experience and thinking: must mean I am an architect guy. The person, who understands all fields of technology and was in, have enough experience and knowledge in all directions, that I can reason, be on the same page with programmers in all languages (I programmed in all levels of languages (from Assembly, to C to C++, to Python, JS, Node.JS to Lisp to Haskell)), admins, db-admins, web-developers, hardware engineers, field-support guys, and more-over businessmen and entrepreneurs.\nWith businessmen we discuss approaches and view, and make solutions even better for them. And in background, most times, I know \u2013 that implementations take less time, and have a less cost.\nI help businessmen as good as I can. We discuss and do solutions more suitable, with less cost, more robust and more maintainable, and suited for future of their business and it's growth. IT is a strange world, where it is possible in reality. Using masterful approach in several dimensions (technical, management, psychological, social). So I look for great reality-driven clients, really, because that is when we both have best results. I feel accomplished, entrepreneur \u2013 happy, and benefits from results. And I like to think they also feel accomplished, and I made valuable fro them part in their business, that get them faster to their dreams becoming reality.\n\n\nI have great graduate and postgraduate telecommunication education while also had CCNA in Cisco area, love it, and taught it also.\nI center to be performant. And build great quality systems.\nAutomation/virtualization&containerization practice. \nAlso I had Microsoft administration history and a touch of love between IBM.\n\n\nSkills\n\n\n\n\nKnow Linux really good. Can create under any distribution.\n\n\nUnderlying innerworks, technologies of Linux and Open Source technologies. How they work. What ecosystem have and what it doesn't have. Sometimes proprietary products is a real way.\n\n\n\n\nI have experience working with:\n\n\nOS Linux\n\n\n\n\nDebian\n\n\nUbuntu (from 7.04 to today)\n\n\nCentOS\n\n\nFedora (My first Linux was Red Hat Linux 8)\n\n\nArch Linux\n\n\nAlpine Linux (deure Docker standard)\n\n\nCan create efficiently in any other, because I know ways of Linux\n\n\n\n\nFor myself I use Linux for everything. Can cover all my needs. I eat my own food 24/7.\nIn business used *nix in a hosting provider and as system administrator of a systems integrator company for one and a half year. In some side projects, some of them on Upwork. And projects for local business customers.\n\n\nFor servers I use suited to task/requirements distro.\nFor myself I use ArchLinux, that enables me real great knowledge and understanding of depth and all bleeding edge technologies.\n\n\nI am active contributor to current best Linux information resource - ArchWiki (\n1\n,\n2\n).\n\n\nHave some experience in more exotic OS\n\n\n\n\nIBM AIX systems. 6.1 and 7.1. I got IBM internship, but sadly couldn't be accepted by IBM because University document reasons (finished my degree). IBM staff, like a great company do, in apology gave me 3 basic courses of IBM AIX systems.\n\n\nFreeBSD\n\n\nRedHat\n\n\n\n\nOS Windows\n\n\n\n\nStarting from MS DOS 3.0, MS DOS 5.0, Windows 1.0, 3.11, 95, 95 OSR2, 98, 98 SP1, SP2, Windows NT, Windows 2000, Windows 2003 Server, Windows 2008 Server, Windows 2012 Server.\n\n\nI was administrator of system integration company SI BIS, infrastructure was on Microsoft products, this is where my point of Windows 2008 Server, Windows 2012 Server from.\n\n\n\n\nMain technologies I have experience in\n\n\nInit subsystems:\n\n\n\n\nSystemd\n\n\nSysV\n\n\nUpstart\n\n\n\n\nConfiguration/Code Management:\n\n\n\n\nGit\n\n\nSaltStack\n\n\nPuppet\n\n\n\n\nDo Ansible or Chef is not hard for me also, because it is merely a dialects of description for automation.\n\n\nVirtualization & containerization:\n\n\n\n\nVirtualization and containerization theory\n\n\nDocker (Compose, Machine. Swarm, private repositories)\n\n\nKubernetes\n\n\nKVM\n\n\nVMWare solutions line with ESXi (5.0-5.2)\n\n\nOpenVZ\n\n\nHyperV\n\n\nLXC\n\n\n\n\nDocker is my passion.\n\n\nDatabases:\n\n\n\n\nDatabase theory overall. Structure, keys, normalization, queries, transactions, users, rights, boolean algebra.\n\n\nSQL language\n\n\nMySQL\n\n\nMariaDB\n\n\nPostgresSQL\n\n\nInfluxDB (special DB for time-series data)\n\n\nMicrosoft SQL\n\n\nMicrosoft Access\n\n\nBriefly touched NoSQL, MLP databases. Couchbase and MongoDB.\n\n\n\n\nMonitoring:\n\n\n\n\nZabbix (and it's theory of items, triggers, etc.)\n\n\nGrafana\n\n\nInfluxDB\n\n\nnetdata\n\n\nGraphite\n\n\nSNMP\n\n\nWindows SNMP provider\n\n\nWindows WMI\n\n\nWindows Perf\n\n\nMicrosoft Powershell\n\n\nWindows sysinfo\n\n\nWindows logging and troubleshoot experience\n\n\nLinux Filesystem Hierarchy\n\n\nLinux logging (Syslog, Journald)\n\n\nLinux Finger\n\n\nS.M.A.R.T. (SmartMonTools and so)\n\n\nHardware sensors information\n\n\nZabbix active agents\n\n\n\n\nProgramming & scripting languages \nbasics\n:\n\n\n\n\nHaskell\n\n\nGo\n\n\nNode.JS (+ Jade, Express.JS)\n\n\nJavaScript (+ jQuerry, CSS, HTML5)\n\n\nBash, Bourne Shell, Dash, Fish, ZSH, Bat files\n\n\nPython (basics)\n\n\nC\n\n\nC++ (basics)\n\n\nQT, QML, QTQuick\n\n\nAssembler (TASM)\n\n\nBASIC (ZX Spectrum, my first PC)\n\n\nVisual Basic\n\n\nPascal\n\n\nLisp\n\n\nC#, .Net\n\n\n\n\nI had a mind inclination to be a mathematician or programmer, but as teen chose not to be. But inclination and experience serve me very well. I can pick up something hard, like Haskell or Assembler, Lisp or whatever and run with it. Use of libraries, frameworks boosts that.\n\n\nVoIP:\n\n\n\n\nAsterisk\n\n\nNetwork education help me a lot here also\n\n\n\n\nNetwork OS:\n\n\n\n\nCisco IOS 12.4T, and 15M\n\n\nCisco Catalyst\n\n\nMikroTik RouterBOARD\n\n\nHad brief experience with Huawei VRP to understand how much it is rewritten IOS (but all names are changed). Some technologies also.\n\n\n\n\nI know Telecommunications, if needed for work, from top to bottom\n\n\n\n\n\n\nI have higher degree at Telecommunications. Master and underway to Postgraduate degree. Bachelor degree was more software centered (STP modification for PON networks). Master degree more hardware centered (WDM in PON networks). From my interest to hard subject solidly I know software, hardware, and underlying Telecommunication theory, Calculus, Probability theory, Classical electrodynamics that was strong points at my University.\n\n\n\n\n\n\nI get official CCNA education. And love Cisco tech and console.\nBut honestly don't get appropriate certification, and don't saw strong point. On my nevertheless good CCNA knowledge created with team networking lab at university. With complex infrastructure.\nSome time after that, my scientific director got contract to conduct courses. I wrote part of the materials, and was main practical knowledge lecturer and held practices for business courses. Courses was created specifically for Ukrainian national broadcasting company and consisted of questions they wanted. From basics of networking, ISO levels 1-3, IP/TCP stack, Cisco and MikroTik basics, basics of switching, VLANs, basic routing & protocols, to basics of encryption, and VPN tunneling, client and site-to-site. This all I explained them in detail. And there was 6 waves of courses.\nThat is why I have knowledge of networks on something more than Cisco CCNA level because of my Networking education & CCNA courses & some job and science experience of additional and essential topics like multi-area OSPF, MPLS, optical networks.\n\n\n\n\n\n\nSocial skills:\n\n\n\n\nI love smart people\n\n\nI love to work in team if personals are appreciated\n\n\nI love listen to and tell through, it is more fun and productive\n\n\nI love when everyone know their zone of responsibility. I don't like when I get a task, and giver hold my hand or try to do task instead of me. Than why do you hire professional and give him task. If you give me a task and pay me - it is my responsibility. Rich/effective in live people have only this mindset. And I want both client, friend and me be rich/effective in live.\n\n\n\n\nMy GitHub pages\n\n\n\n\nGitHub\n\n\nOld GitHub",
+            "location": "/2017-04-12. SaltStack-Formulas-install/",
+            "text": "SaltStack formulas presetup/install/testing/usage\n\u00b6\n\n\nLook through docs briefly\n\u00b6\n\n\nOfficial Doc (not so great, but useful)\n\n\nInstallation\n\u00b6\n\n\nPrepare Salt formulas\n\u00b6\n\n\nFork what you want from \nsalt formulas\n.\n\n\nWhy? Because official documentation points to it, but also \nunconditionally requires\n.\n\n\nCreate a branch in formulas\n\u00b6\n\n\nCorrespond to your environment ('base' in my setup):\n\n\n1\n2\n3\n4\ngit clone formula\ngit \ncd\n formula\ngit checkout -b \n'base'\n\ngit push origin \n'base'\n\n\n\n\n\n\n\nInstall Git Backend in Python\n\u00b6\n\n\nNeed to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.\n\n\nOfficail notes: \ninstalling-dependencies\n.\n\n\nIn Arch Linux:\n\n\n1\nyaourt -Syu python2-dulwich\n\n\n\n\n\n\nOr use PIP install:\n\n\n1\npip install pygit2\n\n\n\n\n\n\n1\npip install gitpython\n\n\n\n\n\n\n1\npip install dulwich\n\n\n\n\n\n\nEnable Salt to use GIT backend\n\u00b6\n\n\n1\n2\n3\n4\n5\n/etc/salt/master\n\n\n---\n\n\nfileserver_backend\n:\n\n  \n-\n \ngit\n\n  \n-\n \nroots\n\n\n\n\n\n\n\nThese list going to be searched through in listed order.\n\n\nMore at: \nsection on fileserver backends\n.\n\n\nEnable formula remote repos\n\u00b6\n\n\n1\n2\n3\n4\n/etc/salt/master\n\n\n---\n\n\ngitfs_remotes\n:\n\n  \n-\n \nhttps://github.com/saltstack-formulas/docker-formula.git\n\n\n\n\n\n\n\nReference information:\n\n\n\n\n\n\nYou add that as remote repository of formulas. \nofficial doc\n\n\n\n\n\n\nThis is basically works as literal remote fs. \nofficial doc\n\n\n\n\n\n\nOfficial documentation has an error\n\u00b6\n\n\n\n\nBug\n\n\nBe sure to put '.git' at the end of GIT URLs\n. Salt requires them to parse links with python backends.\n\n\n\n\nFormulas usage\n\u00b6\n\n\nTo use formulas:\n\u00b6\n\n\nin sls file\n\n\n1\n2\n3\n*\n.sls\n\n\n---\n\n  \n-\n \ndocker\n\n\n\n\n\n\n\nor\n\n\n1\n2\n3\n*\n.sls\n\n\n---\n\n\ndocker\n:\n\n\n\n\n\n\n\nto install formula using docker-formula.\n\n\nLook at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like \nhere\n.\n\n\nTo overload formula:\n\u00b6\n\n\nYou can extend formulas or use their source.\nTo include formula source in sls (you can overload, like docker.sls)\n\n\n1\n2\n3\n4\ndocker.sls\n\n\n---\n\n\ninclude\n:\n\n  \n-\n \ndocker\n\n\n\n\n\n\n\nHere docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.\n\n\nTesting\n\u00b6\n\n\nCheck if SaltStack formula works\n\u00b6\n\n\n1\nsudo salt \n'host'\n state.show_sls docker\n\n\n\n\n\n\nTo debug Master\n\u00b6\n\n\n1\nsudo salt-master -l debug\n\n\n\n\n\n\nIf you get: [CRITICAL] No suitable gitfs provider module is installed.\n\u00b6\n\n\nSaltStack can not find python git backend (pygit2, GitPython or Dulwich). So you need to figure-out this.\n\n\nLook at Docker state module\n\u00b6\n\n\nhttps://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerng.html#module-salt.states.dockerng",
+            "title": "2017-04-12. SaltStack formulas"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#saltstack-formulas-presetupinstalltestingusage",
+            "text": "",
+            "title": "SaltStack formulas presetup/install/testing/usage"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#look-through-docs-briefly",
+            "text": "Official Doc (not so great, but useful)",
+            "title": "Look through docs briefly"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#installation",
+            "text": "",
+            "title": "Installation"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#prepare-salt-formulas",
+            "text": "Fork what you want from  salt formulas .  Why? Because official documentation points to it, but also  unconditionally requires .",
+            "title": "Prepare Salt formulas"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#create-a-branch-in-formulas",
+            "text": "Correspond to your environment ('base' in my setup):  1\n2\n3\n4 git clone formula\ngit  cd  formula\ngit checkout -b  'base' \ngit push origin  'base'",
+            "title": "Create a branch in formulas"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#install-git-backend-in-python",
+            "text": "Need to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.  Officail notes:  installing-dependencies .  In Arch Linux:  1 yaourt -Syu python2-dulwich   Or use PIP install:  1 pip install pygit2   1 pip install gitpython   1 pip install dulwich",
+            "title": "Install Git Backend in Python"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#enable-salt-to-use-git-backend",
+            "text": "1\n2\n3\n4\n5 /etc/salt/master  ---  fileserver_backend : \n   -   git \n   -   roots    These list going to be searched through in listed order.  More at:  section on fileserver backends .",
+            "title": "Enable Salt to use GIT backend"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#enable-formula-remote-repos",
+            "text": "1\n2\n3\n4 /etc/salt/master  ---  gitfs_remotes : \n   -   https://github.com/saltstack-formulas/docker-formula.git    Reference information:    You add that as remote repository of formulas.  official doc    This is basically works as literal remote fs.  official doc",
+            "title": "Enable formula remote repos"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#official-documentation-has-an-error",
+            "text": "Bug  Be sure to put '.git' at the end of GIT URLs . Salt requires them to parse links with python backends.",
+            "title": "Official documentation has an error"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#formulas-usage",
+            "text": "",
+            "title": "Formulas usage"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#to-use-formulas",
+            "text": "in sls file  1\n2\n3 * .sls  --- \n   -   docker    or  1\n2\n3 * .sls  ---  docker :    to install formula using docker-formula.  Look at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like  here .",
+            "title": "To use formulas:"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#to-overload-formula",
+            "text": "You can extend formulas or use their source.\nTo include formula source in sls (you can overload, like docker.sls)  1\n2\n3\n4 docker.sls  ---  include : \n   -   docker    Here docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.",
+            "title": "To overload formula:"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#testing",
+            "text": "",
+            "title": "Testing"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#check-if-saltstack-formula-works",
+            "text": "1 sudo salt  'host'  state.show_sls docker",
+            "title": "Check if SaltStack formula works"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#to-debug-master",
+            "text": "1 sudo salt-master -l debug",
+            "title": "To debug Master"
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#if-you-get-critical-no-suitable-gitfs-provider-module-is-installed",
+            "text": "SaltStack can not find python git backend (pygit2, GitPython or Dulwich). So you need to figure-out this.",
+            "title": "If you get: [CRITICAL] No suitable gitfs provider module is installed."
+        },
+        {
+            "location": "/2017-04-12. SaltStack-Formulas-install/#look-at-docker-state-module",
+            "text": "https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerng.html#module-salt.states.dockerng",
+            "title": "Look at Docker state module"
+        },
+        {
+            "location": "/2016-10-15. bio/",
+            "text": "Biography\n\u00b6\n\n\nI am a versatile guy, that live 27/7 in Linux and Open Source for last 10 years.\n\n\nDamn good system administrator and naturally grown to achieve DevOps levels and beyond.\nI don\u2019t know how guys today can be called DevOps, that not having at least great knowledge in Linux/OS systems. While their work is automating those systems.\n\n\nThou, if look at reality, volume of skills I have and knowledge, depth and scale of thinking, some business experience and thinking: must mean I am an architect guy. The person, who understands all fields of technology and was in, have enough experience and knowledge in all directions, that I can reason, be on the same page with programmers in all languages (I programmed in all levels of languages (from Assembly, to C to C++, to Python, JS, Node.JS to Lisp to Haskell)), admins, db-admins, web-developers, hardware engineers, field-support guys, and more-over businessmen and entrepreneurs.\nWith businessmen we discuss approaches and view, and make solutions even better for them. And in background, most times, I know \u2013 that implementations take less time, and have a less cost.\nI help businessmen as good as I can. We discuss and do solutions more suitable, with less cost, more robust and more maintainable, and suited for future of their business and it's growth. IT is a strange world, where it is possible in reality. Using masterful approach in several dimensions (technical, management, psychological, social). So I look for great reality-driven clients, really, because that is when we both have best results. I feel accomplished, entrepreneur \u2013 happy, and benefits from results. And I like to think they also feel accomplished, and I made valuable fro them part in their business, that get them faster to their dreams becoming reality.\n\n\nI have great graduate and postgraduate telecommunication education while also had CCNA in Cisco area, love it, and taught it also.\nI center to be performant. And build great quality systems.\nAutomation/virtualization&containerization practice. \nAlso I had Microsoft administration history and a touch of love between IBM.\n\n\nSkills\n\u00b6\n\n\n\n\nKnow Linux really good. Can create under any distribution.\n\n\nUnderlying innerworks, technologies of Linux and Open Source technologies. How they work. What ecosystem have and what it doesn't have. Sometimes proprietary products is a real way.\n\n\n\n\nI have experience working with:\n\n\nOS Linux\n\u00b6\n\n\n\n\nDebian\n\n\nUbuntu (from 7.04 to today)\n\n\nCentOS\n\n\nFedora (My first Linux was Red Hat Linux 8)\n\n\nArch Linux\n\n\nAlpine Linux (deure Docker standard)\n\n\nCan create efficiently in any other, because I know ways of Linux\n\n\n\n\nFor myself I use Linux for everything. Can cover all my needs. I eat my own food 24/7.\nIn business used *nix in a hosting provider and as system administrator of a systems integrator company for one and a half year. In some side projects, some of them on Upwork. And projects for local business customers.\n\n\nFor servers I use suited to task/requirements distro.\nFor myself I use ArchLinux, that enables me real great knowledge and understanding of depth and all bleeding edge technologies.\n\n\nI am active contributor to current best Linux information resource - ArchWiki (\n1\n,\n2\n).\n\n\nHave some experience in more exotic OS\n\u00b6\n\n\n\n\nIBM AIX systems. 6.1 and 7.1. I got IBM internship, but sadly couldn't be accepted by IBM because University document reasons (finished my degree). IBM staff, like a great company do, in apology gave me 3 basic courses of IBM AIX systems.\n\n\nFreeBSD\n\n\nRedHat\n\n\n\n\nOS Windows\n\u00b6\n\n\n\n\nStarting from MS DOS 3.0, MS DOS 5.0, Windows 1.0, 3.11, 95, 95 OSR2, 98, 98 SP1, SP2, Windows NT, Windows 2000, Windows 2003 Server, Windows 2008 Server, Windows 2012 Server.\n\n\nI was administrator of system integration company SI BIS, infrastructure was on Microsoft products, this is where my point of Windows 2008 Server, Windows 2012 Server from.\n\n\n\n\nMain technologies I have experience in\n\u00b6\n\n\nInit subsystems:\n\u00b6\n\n\n\n\nSystemd\n\n\nSysV\n\n\nUpstart\n\n\n\n\nConfiguration/Code Management:\n\u00b6\n\n\n\n\nGit\n\n\nSaltStack\n\n\nPuppet\n\n\n\n\nDo Ansible or Chef is not hard for me also, because it is merely a dialects of description for automation.\n\n\nVirtualization & containerization:\n\u00b6\n\n\n\n\nVirtualization and containerization theory\n\n\nDocker (Compose, Machine. Swarm, private repositories)\n\n\nKubernetes\n\n\nKVM\n\n\nVMWare solutions line with ESXi (5.0-5.2)\n\n\nOpenVZ\n\n\nHyperV\n\n\nLXC\n\n\n\n\nDocker is my passion.\n\u00b6\n\n\nDatabases:\n\u00b6\n\n\n\n\nDatabase theory overall. Structure, keys, normalization, queries, transactions, users, rights, boolean algebra.\n\n\nSQL language\n\n\nMySQL\n\n\nMariaDB\n\n\nPostgresSQL\n\n\nInfluxDB (special DB for time-series data)\n\n\nMicrosoft SQL\n\n\nMicrosoft Access\n\n\nBriefly touched NoSQL, MLP databases. Couchbase and MongoDB.\n\n\n\n\nMonitoring:\n\u00b6\n\n\n\n\nZabbix (and it's theory of items, triggers, etc.)\n\n\nGrafana\n\n\nInfluxDB\n\n\nnetdata\n\n\nGraphite\n\n\nSNMP\n\n\nWindows SNMP provider\n\n\nWindows WMI\n\n\nWindows Perf\n\n\nMicrosoft Powershell\n\n\nWindows sysinfo\n\n\nWindows logging and troubleshoot experience\n\n\nLinux Filesystem Hierarchy\n\n\nLinux logging (Syslog, Journald)\n\n\nLinux Finger\n\n\nS.M.A.R.T. (SmartMonTools and so)\n\n\nHardware sensors information\n\n\nZabbix active agents\n\n\n\n\nProgramming & scripting languages \nbasics\n:\n\u00b6\n\n\n\n\nHaskell\n\n\nGo\n\n\nNode.JS (+ Jade, Express.JS)\n\n\nJavaScript (+ jQuerry, CSS, HTML5)\n\n\nBash, Bourne Shell, Dash, Fish, ZSH, Bat files\n\n\nPython (basics)\n\n\nC\n\n\nC++ (basics)\n\n\nQT, QML, QTQuick\n\n\nAssembler (TASM)\n\n\nBASIC (ZX Spectrum, my first PC)\n\n\nVisual Basic\n\n\nPascal\n\n\nLisp\n\n\nC#, .Net\n\n\n\n\nI had a mind inclination to be a mathematician or programmer, but as teen chose not to be. But inclination and experience serve me very well. I can pick up something hard, like Haskell or Assembler, Lisp or whatever and run with it. Use of libraries, frameworks boosts that.\n\n\nVoIP:\n\u00b6\n\n\n\n\nAsterisk\n\n\nNetwork education help me a lot here also\n\n\n\n\nNetwork OS:\n\u00b6\n\n\n\n\nCisco IOS 12.4T, and 15M\n\n\nCisco Catalyst\n\n\nMikroTik RouterBOARD\n\n\nHad brief experience with Huawei VRP to understand how much it is rewritten IOS (but all names are changed). Some technologies also.\n\n\n\n\nI know Telecommunications, if needed for work, from top to bottom\n\u00b6\n\n\n\n\n\n\nI have higher degree at Telecommunications. Master and underway to Postgraduate degree. Bachelor degree was more software centered (STP modification for PON networks). Master degree more hardware centered (WDM in PON networks). From my interest to hard subject solidly I know software, hardware, and underlying Telecommunication theory, Calculus, Probability theory, Classical electrodynamics that was strong points at my University.\n\n\n\n\n\n\nI get official CCNA education. And love Cisco tech and console.\nBut honestly don't get appropriate certification, and don't saw strong point. On my nevertheless good CCNA knowledge created with team networking lab at university. With complex infrastructure.\nSome time after that, my scientific director got contract to conduct courses. I wrote part of the materials, and was main practical knowledge lecturer and held practices for business courses. Courses was created specifically for Ukrainian national broadcasting company and consisted of questions they wanted. From basics of networking, ISO levels 1-3, IP/TCP stack, Cisco and MikroTik basics, basics of switching, VLANs, basic routing & protocols, to basics of encryption, and VPN tunneling, client and site-to-site. This all I explained them in detail. And there was 6 waves of courses.\nThat is why I have knowledge of networks on something more than Cisco CCNA level because of my Networking education & CCNA courses & some job and science experience of additional and essential topics like multi-area OSPF, MPLS, optical networks.\n\n\n\n\n\n\nSocial skills:\n\u00b6\n\n\n\n\nI love smart people\n\n\nI love to work in team if personals are appreciated\n\n\nI love listen to and tell through, it is more fun and productive\n\n\nI love when everyone know their zone of responsibility. I don't like when I get a task, and giver hold my hand or try to do task instead of me. Than why do you hire professional and give him task. If you give me a task and pay me - it is my responsibility. Rich/effective in live people have only this mindset. And I want both client, friend and me be rich/effective in live.\n\n\n\n\nMy GitHub pages\n\u00b6\n\n\n\n\nGitHub\n\n\nOld GitHub",
             "title": "Biography"
         },
         {
-            "location": "/bio/#biography",
+            "location": "/2016-10-15. bio/#biography",
             "text": "I am a versatile guy, that live 27/7 in Linux and Open Source for last 10 years.  Damn good system administrator and naturally grown to achieve DevOps levels and beyond.\nI don\u2019t know how guys today can be called DevOps, that not having at least great knowledge in Linux/OS systems. While their work is automating those systems.  Thou, if look at reality, volume of skills I have and knowledge, depth and scale of thinking, some business experience and thinking: must mean I am an architect guy. The person, who understands all fields of technology and was in, have enough experience and knowledge in all directions, that I can reason, be on the same page with programmers in all languages (I programmed in all levels of languages (from Assembly, to C to C++, to Python, JS, Node.JS to Lisp to Haskell)), admins, db-admins, web-developers, hardware engineers, field-support guys, and more-over businessmen and entrepreneurs.\nWith businessmen we discuss approaches and view, and make solutions even better for them. And in background, most times, I know \u2013 that implementations take less time, and have a less cost.\nI help businessmen as good as I can. We discuss and do solutions more suitable, with less cost, more robust and more maintainable, and suited for future of their business and it's growth. IT is a strange world, where it is possible in reality. Using masterful approach in several dimensions (technical, management, psychological, social). So I look for great reality-driven clients, really, because that is when we both have best results. I feel accomplished, entrepreneur \u2013 happy, and benefits from results. And I like to think they also feel accomplished, and I made valuable fro them part in their business, that get them faster to their dreams becoming reality.  I have great graduate and postgraduate telecommunication education while also had CCNA in Cisco area, love it, and taught it also.\nI center to be performant. And build great quality systems.\nAutomation/virtualization&containerization practice. \nAlso I had Microsoft administration history and a touch of love between IBM.",
             "title": "Biography"
         },
         {
-            "location": "/bio/#skills",
+            "location": "/2016-10-15. bio/#skills",
             "text": "Know Linux really good. Can create under any distribution.  Underlying innerworks, technologies of Linux and Open Source technologies. How they work. What ecosystem have and what it doesn't have. Sometimes proprietary products is a real way.   I have experience working with:",
             "title": "Skills"
         },
         {
-            "location": "/bio/#os-linux",
+            "location": "/2016-10-15. bio/#os-linux",
             "text": "Debian  Ubuntu (from 7.04 to today)  CentOS  Fedora (My first Linux was Red Hat Linux 8)  Arch Linux  Alpine Linux (deure Docker standard)  Can create efficiently in any other, because I know ways of Linux   For myself I use Linux for everything. Can cover all my needs. I eat my own food 24/7.\nIn business used *nix in a hosting provider and as system administrator of a systems integrator company for one and a half year. In some side projects, some of them on Upwork. And projects for local business customers.  For servers I use suited to task/requirements distro.\nFor myself I use ArchLinux, that enables me real great knowledge and understanding of depth and all bleeding edge technologies.  I am active contributor to current best Linux information resource - ArchWiki ( 1 , 2 ).",
             "title": "OS Linux"
         },
         {
-            "location": "/bio/#have-some-experience-in-more-exotic-os",
+            "location": "/2016-10-15. bio/#have-some-experience-in-more-exotic-os",
             "text": "IBM AIX systems. 6.1 and 7.1. I got IBM internship, but sadly couldn't be accepted by IBM because University document reasons (finished my degree). IBM staff, like a great company do, in apology gave me 3 basic courses of IBM AIX systems.  FreeBSD  RedHat",
             "title": "Have some experience in more exotic OS"
         },
         {
-            "location": "/bio/#os-windows",
+            "location": "/2016-10-15. bio/#os-windows",
             "text": "Starting from MS DOS 3.0, MS DOS 5.0, Windows 1.0, 3.11, 95, 95 OSR2, 98, 98 SP1, SP2, Windows NT, Windows 2000, Windows 2003 Server, Windows 2008 Server, Windows 2012 Server.  I was administrator of system integration company SI BIS, infrastructure was on Microsoft products, this is where my point of Windows 2008 Server, Windows 2012 Server from.",
             "title": "OS Windows"
         },
         {
-            "location": "/bio/#main-technologies-i-have-experience-in",
+            "location": "/2016-10-15. bio/#main-technologies-i-have-experience-in",
             "text": "",
             "title": "Main technologies I have experience in"
         },
         {
-            "location": "/bio/#init-subsystems",
+            "location": "/2016-10-15. bio/#init-subsystems",
             "text": "Systemd  SysV  Upstart",
             "title": "Init subsystems:"
         },
         {
-            "location": "/bio/#configurationcode-management",
+            "location": "/2016-10-15. bio/#configurationcode-management",
             "text": "Git  SaltStack  Puppet   Do Ansible or Chef is not hard for me also, because it is merely a dialects of description for automation.",
             "title": "Configuration/Code Management:"
         },
         {
-            "location": "/bio/#virtualization-containerization",
+            "location": "/2016-10-15. bio/#virtualization-containerization",
             "text": "Virtualization and containerization theory  Docker (Compose, Machine. Swarm, private repositories)  Kubernetes  KVM  VMWare solutions line with ESXi (5.0-5.2)  OpenVZ  HyperV  LXC",
             "title": "Virtualization &amp; containerization:"
         },
         {
-            "location": "/bio/#docker-is-my-passion",
+            "location": "/2016-10-15. bio/#docker-is-my-passion",
             "text": "",
             "title": "Docker is my passion."
         },
         {
-            "location": "/bio/#databases",
+            "location": "/2016-10-15. bio/#databases",
             "text": "Database theory overall. Structure, keys, normalization, queries, transactions, users, rights, boolean algebra.  SQL language  MySQL  MariaDB  PostgresSQL  InfluxDB (special DB for time-series data)  Microsoft SQL  Microsoft Access  Briefly touched NoSQL, MLP databases. Couchbase and MongoDB.",
             "title": "Databases:"
         },
         {
-            "location": "/bio/#monitoring",
+            "location": "/2016-10-15. bio/#monitoring",
             "text": "Zabbix (and it's theory of items, triggers, etc.)  Grafana  InfluxDB  netdata  Graphite  SNMP  Windows SNMP provider  Windows WMI  Windows Perf  Microsoft Powershell  Windows sysinfo  Windows logging and troubleshoot experience  Linux Filesystem Hierarchy  Linux logging (Syslog, Journald)  Linux Finger  S.M.A.R.T. (SmartMonTools and so)  Hardware sensors information  Zabbix active agents",
             "title": "Monitoring:"
         },
         {
-            "location": "/bio/#programming-scripting-languages-basics",
+            "location": "/2016-10-15. bio/#programming-scripting-languages-basics",
             "text": "Haskell  Go  Node.JS (+ Jade, Express.JS)  JavaScript (+ jQuerry, CSS, HTML5)  Bash, Bourne Shell, Dash, Fish, ZSH, Bat files  Python (basics)  C  C++ (basics)  QT, QML, QTQuick  Assembler (TASM)  BASIC (ZX Spectrum, my first PC)  Visual Basic  Pascal  Lisp  C#, .Net   I had a mind inclination to be a mathematician or programmer, but as teen chose not to be. But inclination and experience serve me very well. I can pick up something hard, like Haskell or Assembler, Lisp or whatever and run with it. Use of libraries, frameworks boosts that.",
             "title": "Programming &amp; scripting languages basics:"
         },
         {
-            "location": "/bio/#voip",
+            "location": "/2016-10-15. bio/#voip",
             "text": "Asterisk  Network education help me a lot here also",
             "title": "VoIP:"
         },
         {
-            "location": "/bio/#network-os",
+            "location": "/2016-10-15. bio/#network-os",
             "text": "Cisco IOS 12.4T, and 15M  Cisco Catalyst  MikroTik RouterBOARD  Had brief experience with Huawei VRP to understand how much it is rewritten IOS (but all names are changed). Some technologies also.",
             "title": "Network OS:"
         },
         {
-            "location": "/bio/#i-know-telecommunications-if-needed-for-work-from-top-to-bottom",
+            "location": "/2016-10-15. bio/#i-know-telecommunications-if-needed-for-work-from-top-to-bottom",
             "text": "I have higher degree at Telecommunications. Master and underway to Postgraduate degree. Bachelor degree was more software centered (STP modification for PON networks). Master degree more hardware centered (WDM in PON networks). From my interest to hard subject solidly I know software, hardware, and underlying Telecommunication theory, Calculus, Probability theory, Classical electrodynamics that was strong points at my University.    I get official CCNA education. And love Cisco tech and console.\nBut honestly don't get appropriate certification, and don't saw strong point. On my nevertheless good CCNA knowledge created with team networking lab at university. With complex infrastructure.\nSome time after that, my scientific director got contract to conduct courses. I wrote part of the materials, and was main practical knowledge lecturer and held practices for business courses. Courses was created specifically for Ukrainian national broadcasting company and consisted of questions they wanted. From basics of networking, ISO levels 1-3, IP/TCP stack, Cisco and MikroTik basics, basics of switching, VLANs, basic routing & protocols, to basics of encryption, and VPN tunneling, client and site-to-site. This all I explained them in detail. And there was 6 waves of courses.\nThat is why I have knowledge of networks on something more than Cisco CCNA level because of my Networking education & CCNA courses & some job and science experience of additional and essential topics like multi-area OSPF, MPLS, optical networks.",
             "title": "I know Telecommunications, if needed for work, from top to bottom"
         },
         {
-            "location": "/bio/#social-skills",
+            "location": "/2016-10-15. bio/#social-skills",
             "text": "I love smart people  I love to work in team if personals are appreciated  I love listen to and tell through, it is more fun and productive  I love when everyone know their zone of responsibility. I don't like when I get a task, and giver hold my hand or try to do task instead of me. Than why do you hire professional and give him task. If you give me a task and pay me - it is my responsibility. Rich/effective in live people have only this mindset. And I want both client, friend and me be rich/effective in live.",
             "title": "Social skills:"
         },
         {
-            "location": "/bio/#my-github-pages",
+            "location": "/2016-10-15. bio/#my-github-pages",
             "text": "GitHub  Old GitHub",
             "title": "My GitHub pages"
         },
         {
             "location": "/about/",
-            "text": "About\n\n\nThis is Anton Latukha personal website.\nIT specialist that devoted his life to computer stuff. Best skill in Linux systems and building any size of infrastructures on them. Architect, business minded, DevOps.  Telecommunication postgraduate.",
+            "text": "About\n\u00b6\n\n\nThis is Anton Latukha personal website.\nIT specialist that devoted his life to computer stuff. Best skill in Linux systems and building any size of infrastructures on them. Architect, business minded, DevOps.  Telecommunication postgraduate.",
             "title": "About"
         },
         {
