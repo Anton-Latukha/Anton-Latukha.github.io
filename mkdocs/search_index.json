@@ -11,92 +11,122 @@
             "title": "Welcome to Anton Latukha's place"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/",
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/",
+            "text": "How to create proxy for Spotify\n\u00b6\n\n\nInterlude\n\u00b6\n\n\n(For fast read, look at \nMain content\n)\n\n\nAs you probably already faced, many things not available in different countries. As also Spotify.\n\n\nSo you are thinking how to create proxy for yourself, to stream Spotify traffic through it.\n\n\nThat mean you are probably a sort of technician. And probably logged in to servers in your life.\n\n\nSo you probably used SSH.\nBut SSH is mush more than you think it is.\n\n\nMain content\n\u00b6\n\n\nTo create a SOCKS5 Proxy server with SSH:\n\n\n\n\nssh [-p \nremote_port\n] -D \nlocal_port_to_bind_to\n [\nremote_user\n@]\nremote_mashine\n\n\n\n\nand that is all.\n\n\nDetailed description\n\u00b6\n\n\n\n\n\n\n-p\n \nremote_port\n - if you have not standard port for SSH;\n\n\n\n\n\n\n-D\n \nlocal_port_to_bind_to\n - must be not \"well known\" and not already used port (pick just a random port above ~1024, like 8888 or 9999, up to 32000);\n\n\n\n\n\n\nremote_mashine\n - domain name or IP address;\n\n\n\n\n\n\nSSH is going to create local socket for that port. And going to pipe through SSH tunnel all traffic that arrived at that port to the remote host. So traffic going to go from that host IP to the Internet.\n\n\nSo yes, you:\n\n\n\n\nneed some remote host in the country that has service open.\n\n\n\n\nUSA is the safe bet.\n\n\nAs a tech guy, you can hold a host somewhere already, or ask some friend to pass audio traffic, it is not much. You not even need a root privileges on server to do that. You can do that as a regular user.\n\n\nClient configuration\n\u00b6\n\n\nIs very straight-forward.\n\n\n\n\n\nGood luck to you. And happy listening.",
+            "title": "2017-04-14. How to setup proxy to listen Spotify"
+        },
+        {
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/#how-to-create-proxy-for-spotify",
+            "text": "",
+            "title": "How to create proxy for Spotify"
+        },
+        {
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/#interlude",
+            "text": "(For fast read, look at  Main content )  As you probably already faced, many things not available in different countries. As also Spotify.  So you are thinking how to create proxy for yourself, to stream Spotify traffic through it.  That mean you are probably a sort of technician. And probably logged in to servers in your life.  So you probably used SSH.\nBut SSH is mush more than you think it is.",
+            "title": "Interlude"
+        },
+        {
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/#main-content",
+            "text": "To create a SOCKS5 Proxy server with SSH:   ssh [-p  remote_port ] -D  local_port_to_bind_to  [ remote_user @] remote_mashine   and that is all.",
+            "title": "Main content"
+        },
+        {
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/#detailed-description",
+            "text": "-p   remote_port  - if you have not standard port for SSH;    -D   local_port_to_bind_to  - must be not \"well known\" and not already used port (pick just a random port above ~1024, like 8888 or 9999, up to 32000);    remote_mashine  - domain name or IP address;    SSH is going to create local socket for that port. And going to pipe through SSH tunnel all traffic that arrived at that port to the remote host. So traffic going to go from that host IP to the Internet.  So yes, you:   need some remote host in the country that has service open.   USA is the safe bet.  As a tech guy, you can hold a host somewhere already, or ask some friend to pass audio traffic, it is not much. You not even need a root privileges on server to do that. You can do that as a regular user.",
+            "title": "Detailed description"
+        },
+        {
+            "location": "/2017-04-14.-How-to-setup-proxy-to-listen-Spotify/#client-configuration",
+            "text": "Is very straight-forward.   Good luck to you. And happy listening.",
+            "title": "Client configuration"
+        },
+        {
+            "location": "/2017-04-12.-SaltStack-Formulas-install/",
             "text": "SaltStack formulas presetup/install/testing/usage\n\u00b6\n\n\nLook through docs briefly\n\u00b6\n\n\nOfficial Doc (not so great, but useful)\n\n\nInstallation\n\u00b6\n\n\nPrepare Salt formulas\n\u00b6\n\n\nFork what you want from \nsalt formulas\n.\n\n\nWhy? Because official documentation points to it, but also \nunconditionally requires\n.\n\n\nCreate a branch in formulas\n\u00b6\n\n\nCorrespond to your environment ('base' in my setup):\n\n\n1\n2\n3\n4\ngit clone formula\ngit \ncd\n formula\ngit checkout -b \n'base'\n\ngit push origin \n'base'\n\n\n\n\n\n\n\nInstall Git Backend in Python\n\u00b6\n\n\nNeed to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.\n\n\nOfficail notes: \ninstalling-dependencies\n.\n\n\nIn Arch Linux:\n\n\n1\nyaourt -Syu python2-dulwich\n\n\n\n\n\n\nOr use PIP install:\n\n\n1\npip install pygit2\n\n\n\n\n\n\n1\npip install gitpython\n\n\n\n\n\n\n1\npip install dulwich\n\n\n\n\n\n\nEnable Salt to use GIT backend\n\u00b6\n\n\n1\n2\n3\n4\n5\n/etc/salt/master\n\n\n---\n\n\nfileserver_backend\n:\n\n  \n-\n \ngit\n\n  \n-\n \nroots\n\n\n\n\n\n\n\nThese list going to be searched through in listed order.\n\n\nMore at: \nsection on fileserver backends\n.\n\n\nEnable formula remote repos\n\u00b6\n\n\n1\n2\n3\n4\n/etc/salt/master\n\n\n---\n\n\ngitfs_remotes\n:\n\n  \n-\n \nhttps://github.com/saltstack-formulas/docker-formula.git\n\n\n\n\n\n\n\nReference information:\n\n\n\n\n\n\nYou add that as remote repository of formulas. \nofficial doc\n\n\n\n\n\n\nThis is basically works as literal remote fs. \nofficial doc\n\n\n\n\n\n\nOfficial documentation has an error\n\u00b6\n\n\n\n\nBug\n\n\nBe sure to put '.git' at the end of GIT URLs\n. Salt requires them to parse links with python backends.\n\n\n\n\nFormulas usage\n\u00b6\n\n\nTo use formulas:\n\u00b6\n\n\nin sls file\n\n\n1\n2\n3\n*\n.sls\n\n\n---\n\n  \n-\n \ndocker\n\n\n\n\n\n\n\nor\n\n\n1\n2\n3\n*\n.sls\n\n\n---\n\n\ndocker\n:\n\n\n\n\n\n\n\nto install formula using docker-formula.\n\n\nLook at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like \nhere\n.\n\n\nTo overload formula:\n\u00b6\n\n\nYou can extend formulas or use their source.\nTo include formula source in sls (you can overload, like docker.sls)\n\n\n1\n2\n3\n4\ndocker.sls\n\n\n---\n\n\ninclude\n:\n\n  \n-\n \ndocker\n\n\n\n\n\n\n\nHere docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.\n\n\nTesting\n\u00b6\n\n\nCheck if SaltStack formula works\n\u00b6\n\n\n1\nsudo salt \n'host'\n state.show_sls docker\n\n\n\n\n\n\nTo debug Master\n\u00b6\n\n\n1\nsudo salt-master -l debug\n\n\n\n\n\n\nIf you get: [CRITICAL] No suitable gitfs provider module is installed.\n\u00b6\n\n\nSaltStack can not find python git backend (pygit2, GitPython or Dulwich). So you need to figure-out this.\n\n\nLook at Docker state module\n\u00b6\n\n\nhttps://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerng.html#module-salt.states.dockerng",
             "title": "2017-04-12. SaltStack formulas"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#saltstack-formulas-presetupinstalltestingusage",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#saltstack-formulas-presetupinstalltestingusage",
             "text": "",
             "title": "SaltStack formulas presetup/install/testing/usage"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#look-through-docs-briefly",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#look-through-docs-briefly",
             "text": "Official Doc (not so great, but useful)",
             "title": "Look through docs briefly"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#installation",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#installation",
             "text": "",
             "title": "Installation"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#prepare-salt-formulas",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#prepare-salt-formulas",
             "text": "Fork what you want from  salt formulas .  Why? Because official documentation points to it, but also  unconditionally requires .",
             "title": "Prepare Salt formulas"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#create-a-branch-in-formulas",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#create-a-branch-in-formulas",
             "text": "Correspond to your environment ('base' in my setup):  1\n2\n3\n4 git clone formula\ngit  cd  formula\ngit checkout -b  'base' \ngit push origin  'base'",
             "title": "Create a branch in formulas"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#install-git-backend-in-python",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#install-git-backend-in-python",
             "text": "Need to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.  Officail notes:  installing-dependencies .  In Arch Linux:  1 yaourt -Syu python2-dulwich   Or use PIP install:  1 pip install pygit2   1 pip install gitpython   1 pip install dulwich",
             "title": "Install Git Backend in Python"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#enable-salt-to-use-git-backend",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#enable-salt-to-use-git-backend",
             "text": "1\n2\n3\n4\n5 /etc/salt/master  ---  fileserver_backend : \n   -   git \n   -   roots    These list going to be searched through in listed order.  More at:  section on fileserver backends .",
             "title": "Enable Salt to use GIT backend"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#enable-formula-remote-repos",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#enable-formula-remote-repos",
             "text": "1\n2\n3\n4 /etc/salt/master  ---  gitfs_remotes : \n   -   https://github.com/saltstack-formulas/docker-formula.git    Reference information:    You add that as remote repository of formulas.  official doc    This is basically works as literal remote fs.  official doc",
             "title": "Enable formula remote repos"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#official-documentation-has-an-error",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#official-documentation-has-an-error",
             "text": "Bug  Be sure to put '.git' at the end of GIT URLs . Salt requires them to parse links with python backends.",
             "title": "Official documentation has an error"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#formulas-usage",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#formulas-usage",
             "text": "",
             "title": "Formulas usage"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#to-use-formulas",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#to-use-formulas",
             "text": "in sls file  1\n2\n3 * .sls  --- \n   -   docker    or  1\n2\n3 * .sls  ---  docker :    to install formula using docker-formula.  Look at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like  here .",
             "title": "To use formulas:"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#to-overload-formula",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#to-overload-formula",
             "text": "You can extend formulas or use their source.\nTo include formula source in sls (you can overload, like docker.sls)  1\n2\n3\n4 docker.sls  ---  include : \n   -   docker    Here docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.",
             "title": "To overload formula:"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#testing",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#testing",
             "text": "",
             "title": "Testing"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#check-if-saltstack-formula-works",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#check-if-saltstack-formula-works",
             "text": "1 sudo salt  'host'  state.show_sls docker",
             "title": "Check if SaltStack formula works"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#to-debug-master",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#to-debug-master",
             "text": "1 sudo salt-master -l debug",
             "title": "To debug Master"
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#if-you-get-critical-no-suitable-gitfs-provider-module-is-installed",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#if-you-get-critical-no-suitable-gitfs-provider-module-is-installed",
             "text": "SaltStack can not find python git backend (pygit2, GitPython or Dulwich). So you need to figure-out this.",
             "title": "If you get: [CRITICAL] No suitable gitfs provider module is installed."
         },
         {
-            "location": "/2017-04-12. SaltStack-Formulas-install/#look-at-docker-state-module",
+            "location": "/2017-04-12.-SaltStack-Formulas-install/#look-at-docker-state-module",
             "text": "https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerng.html#module-salt.states.dockerng",
             "title": "Look at Docker state module"
         },
