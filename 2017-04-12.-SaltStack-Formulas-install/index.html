@@ -36,8 +36,8 @@
         
         
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Garamond:300,400,400i,700|Hack">
-        <style>body,input{font-family:"Garamond","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Hack","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Hack">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Hack","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -654,7 +654,7 @@
 <p>Fork what you want from <a href="../[https://github.com/saltstack-formulas">salt formulas</a>.</p>
 <p>Why? Because official documentation points to it, but also <a href="http://stackoverflow.com/questions/30514301/problems-with-basic-usage-of-saltstack-apache-formula">unconditionally requires</a>.</p>
 <h4 id="create-a-branch-in-formulas">Create a branch in formulas<a class="headerlink" href="#create-a-branch-in-formulas" title="Permanent link">&para;</a></h4>
-<p>Correspond to your environment ('base' in my setup):</p>
+<p>Correspond to your environment ('base' in my setup):
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -663,31 +663,26 @@ git <span class="nb">cd</span> formula
 git checkout -b <span class="s1">&#39;base&#39;</span>
 git push origin <span class="s1">&#39;base&#39;</span>
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <h3 id="install-git-backend-in-python">Install Git Backend in Python<a class="headerlink" href="#install-git-backend-in-python" title="Permanent link">&para;</a></h3>
 <p>Need to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.</p>
 <p>Officail notes: <a href="https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html#installing-dependencies">installing-dependencies</a>.</p>
-<p>In Arch Linux:</p>
+<p>In Arch Linux:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>yaourt -Syu python2-dulwich
 </pre></div>
-</td></tr></table>
-
-<p>Or use PIP install:</p>
+</td></tr></table></p>
+<p>Or use PIP install:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install pygit2
 </pre></div>
 </td></tr></table>
-
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install gitpython
 </pre></div>
 </td></tr></table>
-
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install dulwich
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <h3 id="enable-salt-to-use-git-backend">Enable Salt to use GIT backend<a class="headerlink" href="#enable-salt-to-use-git-backend" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -698,11 +693,10 @@ git push origin <span class="s1">&#39;base&#39;</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">roots</span>
 </pre></div>
 </td></tr></table>
-
-<p>These list going to be searched through in listed order.</p>
+These list going to be searched through in listed order.</p>
 <p>More at: <a href="https://docs.saltstack.com/en/latest/ref/configuration/master.html#std:conf_master-fileserver_backend">section on fileserver backends</a>.</p>
 <h3 id="enable-formula-remote-repos">Enable formula remote repos<a class="headerlink" href="#enable-formula-remote-repos" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">/etc/salt/master</span>
@@ -711,8 +705,7 @@ git push origin <span class="s1">&#39;base&#39;</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/saltstack-formulas/docker-formula.git</span>
 </pre></div>
 </td></tr></table>
-
-<p>Reference information:</p>
+Reference information:</p>
 <ol>
 <li>
 <p>You add that as remote repository of formulas. <a href="https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#adding-a-formula-as-a-gitfs-remote">official doc</a></p>
@@ -728,7 +721,7 @@ git push origin <span class="s1">&#39;base&#39;</span>
 </div>
 <h2 id="formulas-usage">Formulas usage<a class="headerlink" href="#formulas-usage" title="Permanent link">&para;</a></h2>
 <h3 id="to-use-formulas">To use formulas:<a class="headerlink" href="#to-use-formulas" title="Permanent link">&para;</a></h3>
-<p>in sls file</p>
+<p>in sls file
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
@@ -736,21 +729,19 @@ git push origin <span class="s1">&#39;base&#39;</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
 </pre></div>
 </td></tr></table>
-
-<p>or</p>
+or
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
 <span class="nn">---</span>
 <span class="l l-Scalar l-Scalar-Plain">docker</span><span class="p p-Indicator">:</span>
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <p>to install formula using docker-formula.</p>
 <p>Look at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like <a href="https://github.com/Anton-Latukha/docker-formula/blob/master/README.rst">here</a>.</p>
 <h3 id="to-overload-formula">To overload formula:<a class="headerlink" href="#to-overload-formula" title="Permanent link">&para;</a></h3>
 <p>You can extend formulas or use their source.
-To include formula source in sls (you can overload, like docker.sls)</p>
+To include formula source in sls (you can overload, like docker.sls)
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -760,8 +751,7 @@ To include formula source in sls (you can overload, like docker.sls)</p>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
 </pre></div>
 </td></tr></table>
-
-<p>Here docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.</p>
+Here docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <h3 id="check-if-saltstack-formula-works">Check if SaltStack formula works<a class="headerlink" href="#check-if-saltstack-formula-works" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo salt <span class="s1">&#39;host&#39;</span> state.show_sls docker

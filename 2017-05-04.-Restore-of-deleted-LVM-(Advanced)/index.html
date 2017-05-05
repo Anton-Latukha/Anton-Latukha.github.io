@@ -36,8 +36,8 @@
         
         
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Garamond:300,400,400i,700|Hack">
-        <style>body,input{font-family:"Garamond","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Hack","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Hack">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Hack","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -259,6 +259,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#backup-gpt" title="Backup GPT" class="md-nav__link">
+    Backup GPT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-mbr" title="Backup MBR" class="md-nav__link">
+    Backup MBR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lvm" title="LVM" class="md-nav__link">
     LVM
   </a>
@@ -294,6 +308,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#backup-full-device" title="Backup full device" class="md-nav__link">
+    Backup full device
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#choose-right-partition-table" title="Choose right partition table" class="md-nav__link">
     Choose right partition table
   </a>
@@ -301,15 +322,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#long-analyze-of-the-system" title="Long analyze of the system" class="md-nav__link">
-    Long analyze of the system
+  <a href="#analyze-of-the-system-long-operation" title="Analyze of the system (long operation)" class="md-nav__link">
+    Analyze of the system (long operation)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#restoring-lvm-partition" title="Restoring LVM partition" class="md-nav__link">
-    Restoring LVM partition
+  <a href="#restoring-lvm-partition-with-testdisc" title="Restoring LVM partition with TestDisc" class="md-nav__link">
+    Restoring LVM partition with TestDisc
   </a>
   
 </li>
@@ -350,8 +371,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mounting-everything-on-working-system" title="Mounting everything on working system" class="md-nav__link">
-    Mounting everything on working system
+  <a href="#mounting-everything-on-working-system-preparing-for-chroot" title="Mounting everything on working system (preparing for chroot)" class="md-nav__link">
+    Mounting everything on working system (preparing for chroot)
   </a>
   
 </li>
@@ -359,6 +380,26 @@
           <li class="md-nav__item">
   <a href="#chrooting" title="Chrooting" class="md-nav__link">
     Chrooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-the-bootloader" title="Setup the bootloader" class="md-nav__link">
+    Setup the bootloader
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#congratulations" title="Congratulations!" class="md-nav__link">
+    Congratulations!
   </a>
   
 </li>
@@ -452,6 +493,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#backup-gpt" title="Backup GPT" class="md-nav__link">
+    Backup GPT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-mbr" title="Backup MBR" class="md-nav__link">
+    Backup MBR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lvm" title="LVM" class="md-nav__link">
     LVM
   </a>
@@ -487,6 +542,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#backup-full-device" title="Backup full device" class="md-nav__link">
+    Backup full device
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#choose-right-partition-table" title="Choose right partition table" class="md-nav__link">
     Choose right partition table
   </a>
@@ -494,15 +556,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#long-analyze-of-the-system" title="Long analyze of the system" class="md-nav__link">
-    Long analyze of the system
+  <a href="#analyze-of-the-system-long-operation" title="Analyze of the system (long operation)" class="md-nav__link">
+    Analyze of the system (long operation)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#restoring-lvm-partition" title="Restoring LVM partition" class="md-nav__link">
-    Restoring LVM partition
+  <a href="#restoring-lvm-partition-with-testdisc" title="Restoring LVM partition with TestDisc" class="md-nav__link">
+    Restoring LVM partition with TestDisc
   </a>
   
 </li>
@@ -543,8 +605,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mounting-everything-on-working-system" title="Mounting everything on working system" class="md-nav__link">
-    Mounting everything on working system
+  <a href="#mounting-everything-on-working-system-preparing-for-chroot" title="Mounting everything on working system (preparing for chroot)" class="md-nav__link">
+    Mounting everything on working system (preparing for chroot)
   </a>
   
 </li>
@@ -552,6 +614,26 @@
           <li class="md-nav__item">
   <a href="#chrooting" title="Chrooting" class="md-nav__link">
     Chrooting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-the-bootloader" title="Setup the bootloader" class="md-nav__link">
+    Setup the bootloader
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#congratulations" title="Congratulations!" class="md-nav__link">
+    Congratulations!
   </a>
   
 </li>
@@ -583,6 +665,20 @@
                 
                 
                 <h1 id="restore-of-deleted-lvm-advanced">Restore of deleted LVM (Advanced)<a class="headerlink" href="#restore-of-deleted-lvm-advanced" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Case of bare static filesystems restoring is much more trivial. Look for <strong>"TestDisc"</strong>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Intro</p>
+<p>On the whole Internet there is no information on how to restore LVM, when no backup was present. <br/>
+Do backups. <br/>
+But sometimes someone may fall like I fell and need to restore LVM no matter what. <br/>
+I had backups of main information, but not full backup of the system (or at least GPT/MBR parts in this case). And I learned from that mistake.  <br/>
+I decided to try to restore full system as a whole, to save effort and time. Because I thought it through and found almost universal solution to restore LVM. <br/>
+On multiple drives - you must do <a href="#analyze-of-the-system-long-operation">Analyze</a> and <a href="#restoring-lvm-partition-with-testdisc">Restore</a> for all drives involved. <br/>
+I plan further to release in depth article on Backups.</p>
+</div>
 <p>So one way or another. Boot-sector and partition table are deleted from drive.
 If only first sectors was erased, it is great.</p>
 <p>If you did classic:</p>
@@ -595,6 +691,12 @@ If only first sectors was erased, it is great.</p>
 </td></tr></table>
 
 <p>Instead of doing the opposite - the backups of first sectors.</p>
+<h3 id="backup-gpt">Backup GPT<a class="headerlink" href="#backup-gpt" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sgdisk -b<span class="o">=</span>/path/to/backup/drive-sgdisk.bak /path/to/device
+</pre></div>
+</td></tr></table>
+
+<h3 id="backup-mbr">Backup MBR<a class="headerlink" href="#backup-mbr" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>dd <span class="k">if</span><span class="o">=</span>/dev/<span class="o">[</span>hps<span class="o">]</span>d<span class="o">[</span>a-x<span class="o">]</span> <span class="nv">of</span><span class="o">=</span>/backup/<span class="o">[</span>hps<span class="o">]</span>d<span class="o">[</span>a-x<span class="o">]</span> <span class="nv">bs</span><span class="o">=</span><span class="m">512</span> <span class="nv">count</span><span class="o">=</span><span class="m">1</span>
@@ -603,26 +705,25 @@ If only first sectors was erased, it is great.</p>
 </pre></div>
 </td></tr></table>
 
-<p>In the case of bare static filesystems restoring is much more trivial. Look for <strong>"TestDisc"</strong>.</p>
-<h3 id="lvm">LVM<a class="headerlink" href="#lvm" title="Permanent link">&para;</a></h3>
+<h2 id="lvm">LVM<a class="headerlink" href="#lvm" title="Permanent link">&para;</a></h2>
 <p><img alt="LVM Logo" src="../assets/images/lvm_logo.svg" /></p>
-<p>LVM complicates task of recovery, because it is basically a dynamically shifting layer between physical drives and patritions and filesystems on it.</p>
+<p>LVM complicates task of recovery, because it is basically a dynamically shifting layer between physical drives partitions and filesystems.</p>
 <p>Deleting LVM info - you are basically lock your filesystems in a chaos box you can not penetrate.</p>
-<p>There is small info on Internet on how to resurrect your true HDD/SDD LVM friend(s) alive.</p>
-<p>But we are going to do black magic.</p>
+<p>There is small info on Internet on how to resurrect your true HDD/SDD LVM friend(s) alive. But check it out anyway.</p>
+<p>We are going to do black magic.</p>
 <ol>
 <li>If you understand LVM in depth. LVM dynamically allocates physical space pieces (Physical extent (PE)).<blockquote>
 <p><strong>Physical extent (PE)</strong>
 <p style="margin-left: 40px">The smallest size in the physical volume that can be assigned to a logical volume (default 4MiB))</p>
-This is one of main facts here, that are in this magic.</p>
+This is one of main facts here.</p>
 </blockquote>
 </li>
 <li>Second fact - like most disc solutions - LVM does not shrink by itself.
-We can do it manually. But LVM by itself only expands.</li>
-<li>Third fact - LVM does not move Physical extent (PE) around, they are statically placed. They allocated from free pool, given to Logical volume (LV), written in it info and that is it.</li>
+We can do that process, if we want. But LVM, by itself, only expands.</li>
+<li>Third fact - LVM does not move Physical extents (PE) around, they are statically placed. They allocated from free pool, given to Logical volume (LV), written in it info and that is it.</li>
 </ol>
-<p>But now you see. LVM is a array of Physical extent (PE), and they was allocated and information stored on them is a complete chaos to us and to tools of recovery. That is why it seems impossible to resurrect.</p>
-<h4 id="more-info-on-lvm">More info on LVM<a class="headerlink" href="#more-info-on-lvm" title="Permanent link">&para;</a></h4>
+<p>But now you see. LVM is a array of Physical extent (PE), and they was allocated and information stored on them is a complete chaos to us and to tools of recovery (they does not support LVM). That is why it seems impossible to resurrect for most people. But with dedication, way is described here.</p>
+<h3 id="more-info-on-lvm">More info on LVM<a class="headerlink" href="#more-info-on-lvm" title="Permanent link">&para;</a></h3>
 <p>LVM maps Physical volumes (PV), to Volume groups (VG).</p>
 <blockquote>
 <p><strong>Physical volume (PV)</strong>
@@ -638,24 +739,47 @@ We can do it manually. But LVM by itself only expands.</li>
 <p><strong>Logical volume (LV)</strong>
 <p style="margin-left: 40px"> A "virtual/logical partition" that resides in a volume group and is composed of physical extents. Think of logical volumes as normal partitions. </p></p>
 </blockquote>
-<p>And when Logical volume is going to need to expand its phisical space, it does this by getting Physical extent (PE). It can expand until reaching quota, or free Volume group space available.</p>
-<h3 id="explaining-the-idea">Explaining the idea<a class="headerlink" href="#explaining-the-idea" title="Permanent link">&para;</a></h3>
-<p>Besides corner stones described in <a href="#lvm">LVM</a>, next piece also plays that important part.</p>
+<p>And when Logical volume is going to need to expand its physical space, it does this by getting Physical extent (PE) and mapping it to Logical extent (LE) units, that then LVM includes to Logical volume (LV). It can expand until reaching quota, or free Volume group space available.</p>
+<p>Logical extent (LE) units are additional abstraction for mapping LVM RAID PEs or PEs from different drives to single Logical volume.</p>
+<p><img alt="LVM structure" src="../assets/images/lvm_struct.svg" /></p>
+<h2 id="explaining-the-idea">Explaining the idea<a class="headerlink" href="#explaining-the-idea" title="Permanent link">&para;</a></h2>
+<p>Besides corner stones described in <a href="#lvm">LVM</a>, next piece also plays as important part.</p>
 <p>Not so known fact, LVM does a backups of it's work information.
 In <code>/etc/lvm/backup</code> it stores last backup. In <code>/etc/lvm/archive</code> lays a history of previous backup versions.</p>
-<p>But it is a backup inside the filesystem we trying to restore and get the hold of.</p>
-<p>Here comes a dirty magic.</p>
-<p>I wish.
-If only we could revive LVM to any metadata state (even non-consistent), than with 99% probability if we can expect to get the hold of that <code>/etc/lvm/backup</code>. And it can save us.</p>
-<p>TestDisc can find for us LVM, but TestDisc doesn't support work with LVM. So TestDisc can't somehow find for us, what version of LVM structure it restores (old or last one), and how consistent that data is.</p>
-<p>So idea it. To revive the largest LVM TestDisc can find (probably the latest one), and then <code>chroot</code> to that somewhat alive filesystem from working system and restore <code>/etc/lvm/backup</code>.</p>
-<h3 id="process-of-restoring">Process of restoring<a class="headerlink" href="#process-of-restoring" title="Permanent link">&para;</a></h3>
-<p>Backup at least what is on the drive. Because the process is somewhat nontrivial, long and uses a hack in it.</p>
-<p>Boot from some Live image. As I use Arch Linux, I used Arch based Antegros Live image. DD-t in on flash and all that jazz. Antegros image has X and GUI and Gparted all that prettiness.</p>
-<p>Install (update) lvm2 and testdisk.
+<p>But it is a backup inside the filesystem we trying to restore.</p>
+<p>Here comes a dirty magic I was talking about.</p>
+<p>If only we could revive LVM to any metadata state (even non-consistent), than almost certainly we can expect to get the hold of that <code>/etc/lvm/backup</code>. And it going to shine a lite on us.</p>
+<p>TestDisc can find LVM partition remains, but TestDisc doesn't support work with LVM. It only can say: it looks like some version of LVM table. So TestDisc can't somehow find for us, what version of LVM structure it restores (old or last one), and how consistent that LVM data is.</p>
+<p>So idea is. To revive the largest LVM TestDisc can find (probably the latest one, because LVM only expands most of the time and LVM PE data is static), and then <code>chroot</code> to that somewhat alive filesystem from working system and restore <code>/etc/lvm/backup</code>.</p>
+<h2 id="process-of-restoring">Process of restoring<a class="headerlink" href="#process-of-restoring" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For LVM on multiple drives - you must do <a href="#analyze-of-the-system-long-operation">Analyze</a> and <a href="#restoring-lvm-partition-with-testdisc">Restore</a> for all drives involved. After that next step - recovery - is going to be successful.</p>
+</div>
+<ul>
+<li>Connect the drive to working system or boot from Live image <strong>that is compatible with distribution that you restore.</strong></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>As I used Arch Linux on that machine, I used Arch based Antergos Live image. DD-t ISO on a flash drive. Antergos image has X11, Desktop Environment and Gparted prettiness.</p>
+</div>
+<ul>
+<li>Install (update) <code>lvm2</code> and <code>testdisk</code>.
 LVM2 as you guess provide LVM support.
-Testdisk is magical but not intuitive tool.</p>
-<h4 id="choose-right-partition-table">Choose right partition table<a class="headerlink" href="#choose-right-partition-table" title="Permanent link">&para;</a></h4>
+TestDisk is magical but not intuitive tool.</li>
+</ul>
+<h3 id="backup-full-device">Backup full device<a class="headerlink" href="#backup-full-device" title="Permanent link">&para;</a></h3>
+<p>Backup at least what is on the drive:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ddrescue -v -f -n /path/to/drive /backup/path /backup/path/rescue.log
+</pre></div>
+</td></tr></table></p>
+<p>Because the process is somewhat nontrivial, long and uses a hack in it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>ddrescue</code> output <a href="https://superuser.com/questions/630951/why-is-it-impossible-to-compress-on-the-fly-images-by-ddrescue">can't be archived on the fly</a>. If you need compression - use filesystem level compression on the backup media. </p>
+</div>
+<h3 id="choose-right-partition-table">Choose right partition table<a class="headerlink" href="#choose-right-partition-table" title="Permanent link">&para;</a></h3>
+<p>Choose here right type of the partition. It is up to your research. Probably you have one of: <code>[EFI GPT], [Mac ], [Intel ]</code>.
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -679,21 +803,20 @@ http://www.cgsecurity.org
 Disk /dev/sda - 1000 GB / 931 GiB - Hitachi HDS721010CLA330
 
 Please select the partition table type, press Enter when done.
-&gt;[Intel ] Intel/PC partition
- [EFI GPT] EFI GPT partition map (Mac i386, some x86_64...)
- [Humax ] Humax partition table
- [Mac ] Apple partition map
- [None ] Non partitioned media
- [Sun ] Sun Solaris partition
- [XBox ] XBox partition
- [Return ] Return to disk selection
+[Intel ] Intel/PC partition
+&gt;[EFI GPT] EFI GPT partition map (Mac i386, some x86_64...)
+[Humax ] Humax partition table
+[Mac ] Apple partition map
+[None ] Non partitioned media
+[Sun ] Sun Solaris partition
+[XBox ] XBox partition
+[Return ] Return to disk selection
 </pre></div>
-</td></tr></table>
-
+</td></tr></table></p>
 <p>Hint: Intel partition table type has been detected.
 Note: Do NOT select 'None' for media with only a single partition. It's very
 rare for a disk to be 'Non-partitioned'.</p>
-<h4 id="long-analyze-of-the-system">Long analyze of the system<a class="headerlink" href="#long-analyze-of-the-system" title="Permanent link">&para;</a></h4>
+<h3 id="analyze-of-the-system-long-operation">Analyze of the system (long operation)<a class="headerlink" href="#analyze-of-the-system-long-operation" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -714,20 +837,22 @@ http://www.cgsecurity.org
 
 
 Disk /dev/sda - 1000 GB / 931 GiB - Hitachi HDS721010CLA330
-  CHS 121601 255 63 - sector size=512
+ CHS 121601 255 63 - sector size=512
 
 &gt;[ Analyse ] Analyse current partition structure and search for lost partitions
- [ Advanced ] Filesystem Utils
- [ Geometry ] Change disk geometry
- [ Options ] Modify options
- [ MBR Code ] Write TestDisk MBR code to first sector
- [ Delete ] Delete all data in the partition table
- [ Quit ] Return to disk selection
+[ Advanced ] Filesystem Utils
+[ Geometry ] Change disk geometry
+[ Options ] Modify options
+[ MBR Code ] Write TestDisk MBR code to first sector
+[ Delete ] Delete all data in the partition table
+[ Quit ] Return to disk selection
 </pre></div>
 </td></tr></table>
 
-<p>Note: Correct disk geometry is required for a successful recovery.
-'Analyse' process may give some warnings if it thinks the logical geometry is mismatched.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Correct disk geometry is required for a successful recovery. 'Analyse' process may give some warnings if it thinks the logical geometry is mismatched.</p>
+</div>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -739,7 +864,7 @@ Christophe GRENIER &lt;grenier@cgsecurity.org&gt;
 http://www.cgsecurity.org
 
 Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
-  Partition Start End Size in sectors
+ Partition Start End Size in sectors
 &gt;P Linux LVM 0 32 33 121601 90 25 1953523712
 </pre></div>
 </td></tr></table>
@@ -759,9 +884,9 @@ http://www.cgsecurity.org
 
 Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
 
-  Partition Start End Size in sectors
+ Partition Start End Size in sectors
 
- 1 P Linux LVM 0 32 33 121601 90 25 1953523712
+1 P Linux LVM 0 32 33 121601 90 25 1953523712
 </pre></div>
 </td></tr></table>
 
@@ -796,30 +921,34 @@ Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
 Analyse cylinder 553/121600: 00%
 
 
-  Linux LVM 0 32 33 121601 80 63 1953523120
-  Linux 0 65 2 13 0 51 204800
-  Linux 0 64 63 13 0 49 204800
-  Linux 0 64 63 13 0 49 204800
-  Linux 0 64 63 13 0 49 204800
-  Linux 0 64 63 13 0 49 204800
-  Linux 0 64 63 13 0 49 204800
-  Linux 13 0 52 3276 138 62 52428800
+ Linux LVM 0 32 33 121601 80 63 1953523120
+ Linux 0 65 2 13 0 51 204800
+ Linux 0 64 63 13 0 49 204800
+ Linux 0 64 63 13 0 49 204800
+ Linux 0 64 63 13 0 49 204800
+ Linux 0 64 63 13 0 49 204800
+ Linux 0 64 63 13 0 49 204800
+ Linux 13 0 52 3276 138 62 52428800
 
 
 
 
 
 
-  Stop  
+ Stop  
 </pre></div>
 </td></tr></table>
 
-<h4 id="restoring-lvm-partition">Restoring LVM partition<a class="headerlink" href="#restoring-lvm-partition" title="Permanent link">&para;</a></h4>
+<h3 id="restoring-lvm-partition-with-testdisc">Restoring LVM partition with TestDisc<a class="headerlink" href="#restoring-lvm-partition-with-testdisc" title="Permanent link">&para;</a></h3>
 <p>After that scan TestDisc review several partitions to restore. One of which is LVM. And it says drive is to small (1T&lt;1.3T or something like that) to reincarnate all that partitions. So you restore the LVM partition (the biggest).</p>
-<h4 id="rebooting-system">Rebooting system<a class="headerlink" href="#rebooting-system" title="Permanent link">&para;</a></h4>
-<p>And after that reboot, to refresh drive boot-partition information.</p>
-<h4 id="checking-state">Checking state<a class="headerlink" href="#checking-state" title="Permanent link">&para;</a></h4>
-<p>After reboot while doing:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>At this stage partition and filesystem can be in inconsistent state. Minimize writing to system and proceed further. Restore from backup is going to get us consistent filesystem.</p>
+</div>
+<h3 id="rebooting-system">Rebooting system<a class="headerlink" href="#rebooting-system" title="Permanent link">&para;</a></h3>
+<p>To refresh drive boot-partition information - reboot after restoring.</p>
+<h3 id="checking-state">Checking state<a class="headerlink" href="#checking-state" title="Permanent link">&para;</a></h3>
+<p>After reboot while doing:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -833,86 +962,25 @@ Analyse cylinder 553/121600: 00%
 11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[antergos@ant-16.9 etc]$ lsblk
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 931.5G 0 disk 
-└─sda1 8:1 0 931.5G 0 part 
-  ├─archvg-boot 254:0 0 100M 0 lvm  
-  ├─archvg-archroot 254:1 0 25G 0 lvm /mnt/etc
-  ├─archvg-archvar 254:2 0 15G 0 lvm /run/media/antergos/244907d8-7c9f-
-  ├─archvg-swap 254:3 0 8G 0 lvm  
-  ├─archvg-vault 254:4 0 800G 0 lvm  
-  ├─archvg-crypt 254:5 0 1G 0 lvm  
-  └─archvg-archhome 254:6 0 20G 0 lvm /run/media/antergos/e2d59443-1e66-
+sda1 8:1 0 931.5G 0 part 
+ archvg-boot 254:0 0 100M 0 lvm  
+ archvg-archroot 254:1 0 25G 0 lvm /mnt/etc
+ archvg-archvar 254:2 0 15G 0 lvm /run/media/antergos/244907d8-7c9f-
+ archvg-swap 254:3 0 8G 0 lvm  
+ archvg-vault 254:4 0 800G 0 lvm  
+ archvg-crypt 254:5 0 1G 0 lvm  
+ archvg-archhome 254:6 0 20G 0 lvm /run/media/antergos/e2d59443-1e66-
 </pre></div>
-</td></tr></table>
-
-<p>You began to see:</p>
+</td></tr></table></p>
+<p>You began to see:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[antergos@ant-16.9 etc]$ sudo vgscan
-  Reading volume groups from cache.
-  Found volume group &quot;archvg&quot; using metadata type lvm2
+ Reading volume groups from cache.
+ Found volume group &quot;archvg&quot; using metadata type lvm2
 </pre></div>
-</td></tr></table>
-
-<h4 id="restoring-from-backup">Restoring from backup<a class="headerlink" href="#restoring-from-backup" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo vgchange -ay archvg
-
-mkdir /mnt/root/
-
-mount /dev/disk/by-id/archvg-root /mnt/root/
-
-blkid /dev/sda1
-/dev/sda1: <span class="nv">UUID</span><span class="o">=</span><span class="s2">&quot;7SFaGJ-LKnf-mlx7-m8dY-1bg4-epWM-09y8vR&quot;</span> <span class="nv">TYPE</span><span class="o">=</span><span class="s2">&quot;LVM2_member&quot;</span>
-
-cat /mnt/root/etc/lvm/backup/archvg
-
-sudo vgcfgrestore -f /mnt/root/etc/lvm/backup/archvg archvg
-Metadata Restored
-</pre></div>
-</td></tr></table>
-
-<h4 id="next-reboot">Next reboot<a class="headerlink" href="#next-reboot" title="Permanent link">&para;</a></h4>
-<p>Reboot.</p>
-<p>After that, if you try to boot to recovered system, you can get error:</p>
-<blockquote>
-<p>1234F:</p>
-</blockquote>
-<p>Because no bootloader was configured. Now we need boot from Live image once more.</p>
-<h4 id="optional-make-partition-bootable">(optional) Make partition bootable<a class="headerlink" href="#optional-make-partition-bootable" title="Permanent link">&para;</a></h4>
-<p>If you was booting from LVM.</p>
-<p>Mark partition bootable (that flag was in old boot-sector, as you know old-one went away).
-<code>sudo gparted</code>.
-Right click on partition. Flags. "boot".</p>
-<h4 id="mounting-everything-on-working-system">Mounting everything on working system<a class="headerlink" href="#mounting-everything-on-working-system" title="Permanent link">&para;</a></h4>
-<p>Now you need by yourself mount all LVM volumes to single tree in /mnt/root.
-Because your LVM config is uniq, as mine, I can't give you literal instructions.</p>
-<p>I going to:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>archvg-archroot /mnt/root/
-archvg-boot     /mnt/root/boot
-archvg-archvar  /mnt/root/var
-archvg-archhome /mnt/root/home
-archvg-vault    /mnt/root/mnt/vault
-archvg-crypt    /mnt/root/mnt/crypt
-</pre></div>
-</td></tr></table>
-
-<p>So:</p>
+</td></tr></table></p>
+<h3 id="restoring-from-backup">Restoring from backup<a class="headerlink" href="#restoring-from-backup" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -932,60 +1000,108 @@ archvg-crypt    /mnt/root/mnt/crypt
 17
 18
 19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo -s
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo -s
 
-mkdir -p /mnt/root/
+<span class="c1"># Change volume group attribute to activated</span>
+vgchange -ay archvg
 
-mount /dev/disk/by-id/dm-name-archvg-archroot /mnt/root/
+mkdir /mnt/root/
 
-mkdir -p /mnt/root/boot
+<span class="c1"># We need to mount only partition that has backup</span>
+mount /dev/disk/by-id/archvg-root /mnt/root/
 
-mount /dev/disk/by-id/dm-name-archvg-boot /mnt/root/boot
+<span class="c1"># Locate/print block device attributes</span>
+blkid /dev/sda1
+<span class="c1"># /dev/sda1: UUID=&quot;7SFaGJ-LKnf-mlx7-m8dY-1bg4-epWM-09y8vR&quot; TYPE=&quot;LVM2_member&quot;</span>
 
-mkdir -p /mnt/root/var
+<span class="c1"># Investigate backup. Compare with information above</span>
+cat /mnt/root/etc/lvm/backup/archvg
 
-mount /dev/disk/by-id/dm-name-archvg-archvar /mnt/root/var
-
-mkdir -p /mnt/root/home
-
-mount /dev/disk/by-id/dm-name-archvg-archhome /mnt/root/home
-
-mkdir -p /mnt/root/mnt/vault
-
-mount /dev/disk/by-id/dm-name-archvg-vault /mnt/root/mnt/vault
-
-mkdir -p /mnt/root/mnt/crypt
-
-mount /dev/disk/by-id/dm-name-archvg-crypt /mnt/root/mnt/crypt
-
-swapon /dev/disk/by-id/dm-name-archvg-swap
-
-swapon
-
-lsblk <span class="c1"># check everything</span>
+<span class="c1"># Restore volume group configuration</span>
+vgcfgrestore -f /mnt/root/etc/lvm/backup/archvg archvg
+<span class="c1">#Metadata Restored</span>
 </pre></div>
 </td></tr></table>
 
-<h4 id="chrooting">Chrooting<a class="headerlink" href="#chrooting" title="Permanent link">&para;</a></h4>
+<h3 id="next-reboot">Next reboot<a class="headerlink" href="#next-reboot" title="Permanent link">&para;</a></h3>
+<p>Reboot.</p>
+<p>After that, if you try to boot to recovered system, - you can get error:</p>
+<blockquote>
+<p>1234F:</p>
+</blockquote>
+<p>Because no bootloader was configured. Now we need boot from Live image once more.</p>
+<h3 id="optional-make-partition-bootable">(optional) Make partition bootable<a class="headerlink" href="#optional-make-partition-bootable" title="Permanent link">&para;</a></h3>
+<p>If you was booting from LVM.</p>
+<p>Mark partition bootable (that flag was in old boot-sector, as you know old-one went away).
+<code>sudo gparted</code>.
+Right click on partition. Flags. "boot".</p>
+<h3 id="mounting-everything-on-working-system-preparing-for-chroot">Mounting everything on working system (preparing for chroot)<a class="headerlink" href="#mounting-everything-on-working-system-preparing-for-chroot" title="Permanent link">&para;</a></h3>
+<p>Now you need by yourself mount all LVM volumes to single tree in /mnt/root, exactly how it was on that system.
+Because your LVM config is unique, as also mine, I can't give you literal instructions.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>I going to mount:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>archvg-archroot /mnt/root/
+archvg-boot     /mnt/root/boot
+archvg-archvar  /mnt/root/var
+archvg-archhome /mnt/root/home
+archvg-vault    /mnt/root/mnt/vault
+archvg-crypt    /mnt/root/mnt/crypt
+</pre></div>
+</td></tr></table></p>
+<p>So I did:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo -s
+mkdir -p /mnt/root/
+mount /dev/disk/by-id/dm-name-archvg-archroot /mnt/root/
+mkdir -p /mnt/root/boot
+mount /dev/disk/by-id/dm-name-archvg-boot /mnt/root/boot
+mkdir -p /mnt/root/var
+mount /dev/disk/by-id/dm-name-archvg-archvar /mnt/root/var
+mkdir -p /mnt/root/home
+mount /dev/disk/by-id/dm-name-archvg-archhome /mnt/root/home
+mkdir -p /mnt/root/mnt/vault
+mount /dev/disk/by-id/dm-name-archvg-vault /mnt/root/mnt/vault
+mkdir -p /mnt/root/mnt/crypt
+mount /dev/disk/by-id/dm-name-archvg-crypt /mnt/root/mnt/crypt
+swapon /dev/disk/by-id/dm-name-archvg-swap
+swapon
+lsblk <span class="c1"># check everything</span>
+</pre></div>
+</td></tr></table></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Control what you are mounting where with <code>lsblk</code>. You need do everything right before going <code>chroot</code>.</p>
+</div>
+<h3 id="chrooting">Chrooting<a class="headerlink" href="#chrooting" title="Permanent link">&para;</a></h3>
 <p><a href="https://wiki.archlinux.org/index.php/change_root">Chroot</a> to the system:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>arch-chroot /mnt/root /bin/fish
 </pre></div>
 </td></tr></table>
 
 <p>System maps filesystem data to current system.</p>
-<p>Setup the <a href="https://wiki.archlinux.org/index.php/GRUB">bootloader</a>.</p>
-<p>On this system it was <a href="https://wiki.archlinux.org/index.php/GRUB#Master_Boot_Record_.28MBR.29_specific_instructions">this</a>:</p>
+<h4 id="setup-the-bootloader">Setup the bootloader<a class="headerlink" href="#setup-the-bootloader" title="Permanent link">&para;</a></h4>
+<p>On this system <a href="https://wiki.archlinux.org/index.php/GRUB">bootloader</a> was <a href="https://wiki.archlinux.org/index.php/GRUB#Master_Boot_Record_.28MBR.29_specific_instructions">this</a>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -1009,6 +1125,12 @@ diff /boot/grub/grub.cfg /boot/grub/grub.cfg.pacnew
 grub-mkconfig -o /boot/grub/grub.cfg
 </pre></div>
 </td></tr></table>
+
+<h3 id="congratulations">Congratulations!<a class="headerlink" href="#congratulations" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>After this you have fully restored system. So now you can reboot to your long awaited system and everything is going to run smooth.</p>
+</div>
                 
                   
                 
