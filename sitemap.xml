@@ -6,6 +6,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://blog.latukha.com/bio/</loc>
+     <lastmod>2019-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://blog.latukha.com/about/</loc>
+     <lastmod>2019-03-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://blog.latukha.com/2017-05-04-Restore-of-deleted-LVM-(Advanced)/</loc>
      <lastmod>2019-03-31</lastmod>
      <changefreq>daily</changefreq>
@@ -17,16 +27,6 @@
     </url>
     <url>
      <loc>https://blog.latukha.com/2017-04-12-SaltStack-Formulas-install/</loc>
-     <lastmod>2019-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://blog.latukha.com/bio/</loc>
-     <lastmod>2019-03-31</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://blog.latukha.com/about/</loc>
      <lastmod>2019-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
