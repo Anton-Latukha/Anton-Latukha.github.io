@@ -21,6 +21,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://blog.latukha.com/NixOS-HIE-Emacs/</loc>
+     <lastmod>2019-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://blog.latukha.com/2017-05-04-Restore-of-deleted-LVM-(Advanced)/</loc>
      <lastmod>2019-07-27</lastmod>
      <changefreq>daily</changefreq>
