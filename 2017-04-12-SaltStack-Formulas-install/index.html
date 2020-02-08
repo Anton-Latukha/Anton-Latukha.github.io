@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon-min.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.1">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.e194128b.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.3e3d1dff.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
@@ -722,40 +722,40 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git clone formula
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git clone formula
 git <span class="nb">cd</span> formula
 git checkout -b <span class="s1">&#39;base&#39;</span>
 git push origin <span class="s1">&#39;base&#39;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table></p>
 <h3 id="install-git-backend-in-python">Install Git Backend in Python<a class="headerlink" href="#install-git-backend-in-python" title="Permanent link">&para;</a></h3>
 <p>Need to use deprecated Dulwich on Arch. preferred pygit2 is installed, but was not working on Arch.</p>
 <p>Officail notes: <a href="https://docs.saltstack.com/en/latest/topics/tutorials/gitfs.html#installing-dependencies">installing-dependencies</a>.</p>
 <p>In Arch Linux:
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>yaourt -Syu python2-dulwich
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>yaourt -Syu python2-dulwich
+</code></pre></div>
 </td></tr></table></p>
 <p>Or use PIP install:
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install pygit2
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>pip install pygit2
+</code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install gitpython
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>pip install gitpython
+</code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install dulwich
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>pip install dulwich
+</code></pre></div>
 </td></tr></table></p>
 <h3 id="enable-salt-to-use-git-backend">Enable Salt to use GIT backend<a class="headerlink" href="#enable-salt-to-use-git-backend" title="Permanent link">&para;</a></h3>
 <p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">/etc/salt/master</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">/etc/salt/master</span>
 <span class="nn">---</span>
 <span class="nt">fileserver_backend</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">git</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">roots</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 These list going to be searched through in listed order.</p>
 <p>More at: <a href="https://docs.saltstack.com/en/latest/ref/configuration/master.html#std:conf_master-fileserver_backend">section on fileserver backends</a>.</p>
@@ -763,11 +763,11 @@ These list going to be searched through in listed order.</p>
 <p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">/etc/salt/master</span>
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">/etc/salt/master</span>
 <span class="nn">---</span>
 <span class="nt">gitfs_remotes</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/saltstack-formulas/docker-formula.git</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 Reference information:</p>
 <ol>
@@ -788,18 +788,18 @@ Reference information:</p>
 <p>in sls file
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
 <span class="nn">---</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 or
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">*</span><span class="l l-Scalar l-Scalar-Plain">.sls</span>
 <span class="nn">---</span>
 <span class="nt">docker</span><span class="p">:</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table></p>
 <p>to install formula using docker-formula.</p>
 <p>Look at GitHub documentation of formulas to see how to do install with it and other actions. Name of formula does not required to correspond to install command. Like <a href="https://github.com/Anton-Latukha/docker-formula/blob/master/README.rst">here</a>.</p>
@@ -809,22 +809,22 @@ To include formula source in sls (you can overload, like docker.sls)
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">docker.sls</span>
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">docker.sls</span>
 <span class="nn">---</span>
 <span class="nt">include</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
 Here docker-formula source included in docker.sls, and add your commands, formulas and so on. That is called overload.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
 <h3 id="check-if-saltstack-formula-works">Check if SaltStack formula works<a class="headerlink" href="#check-if-saltstack-formula-works" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo salt <span class="s1">&#39;host&#39;</span> state.show_sls docker
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo salt <span class="s1">&#39;host&#39;</span> state.show_sls docker
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="to-debug-master">To debug Master<a class="headerlink" href="#to-debug-master" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo salt-master -l debug
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo salt-master -l debug
+</code></pre></div>
 </td></tr></table>
 
 <h3 id="if-you-get-critical-no-suitable-gitfs-provider-module-is-installed">If you get: [CRITICAL] No suitable gitfs provider module is installed.<a class="headerlink" href="#if-you-get-critical-no-suitable-gitfs-provider-module-is-installed" title="Permanent link">&para;</a></h3>
@@ -928,7 +928,7 @@ Here docker-formula source included in docker.sls, and add your commands, formul
       
     </div>
     
-      <script src="../assets/javascripts/application.970603a6.js"></script>
+      <script src="../assets/javascripts/application.df00da5d.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
