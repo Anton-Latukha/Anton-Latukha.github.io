@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon-min.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.1">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
     
     
       
@@ -568,24 +568,11 @@
 <h2 id="1-install-the-cachix-httpsgithubcomcachixcachix">1. Install the Cachix: <a href="https://github.com/cachix/cachix">https://github.com/cachix/cachix</a><a class="headerlink" href="#1-install-the-cachix-httpsgithubcomcachixcachix" title="Permanent link">&para;</a></h2>
 <h2 id="2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds">2. Installation of HIE: <a href="https://github.com/infinisil/all-hies/#cached-builds">https://github.com/infinisil/all-hies/#cached-builds</a><a class="headerlink" href="#2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds" title="Permanent link">&para;</a></h2>
 <h3 id="21-provide-cached-builds">2.1. Provide cached builds<a class="headerlink" href="#21-provide-cached-builds" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cachix use all-hies
+<div class="highlight"><pre><span></span><code>cachix use all-hies
 </code></pre></div>
-</td></tr></table>
 
 <h3 id="22a-installation-on-nixos-distribution">2.2.a. Installation on NixOS distribution:<a class="headerlink" href="#22a-installation-on-nixos-distribution" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">{</span> config<span class="p">,</span> pkgs<span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> config<span class="p">,</span> pkgs<span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
 
 <span class="k">let</span>
 
@@ -599,52 +586,19 @@
   <span class="p">];</span>
 <span class="p">}</span>
 </code></pre></div>
-</td></tr></table>
 
 <p>Insert your GHC versions.</p>
 <p>Switch to new configuration:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo -i nixos-rebuild <span class="k">switch</span>
+<div class="highlight"><pre><span></span><code>sudo -i nixos-rebuild <span class="k">switch</span>
 </code></pre></div>
-</td></tr></table>
 
 <h3 id="22b-installation-with-nix-package-manager">2.2.b. Installation with Nix package manager:<a class="headerlink" href="#22b-installation-with-nix-package-manager" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>nix-env -iA selection --arg selector <span class="s1">&#39;p: { inherit (p) ghc865 ghc864; }&#39;</span> -f <span class="s1">&#39;https://github.com/infinisil/all-hies/tarball/master&#39;</span>
+<div class="highlight"><pre><span></span><code>nix-env -iA selection --arg selector <span class="s1">&#39;p: { inherit (p) ghc865 ghc864; }&#39;</span> -f <span class="s1">&#39;https://github.com/infinisil/all-hies/tarball/master&#39;</span>
 </code></pre></div>
-</td></tr></table>
 
 <p>Insert your GHC versions.</p>
 <h2 id="3-emacs-spacemacs-configuration">3. Emacs (Spacemacs) configuration:<a class="headerlink" href="#3-emacs-spacemacs-configuration" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">dotspacemacs-configuration-layers</span>
+<div class="highlight"><pre><span></span><code><span class="nv">dotspacemacs-configuration-layers</span>
 <span class="o">&#39;</span><span class="p">(</span>
 
   <span class="nv">auto-completion</span>
@@ -676,7 +630,6 @@
                                     <span class="nv">nix-sandbox</span>
                                     <span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 
 <p>Where:</p>
 <p><code>auto-complettion</code> configures <code>YASnippet</code>.</p>
@@ -706,9 +659,8 @@ hands now. Be cautious - you can change the world.</p>
 </ol>
 <!-- end list -->
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>readCreateProcess : cabal-helper-wrapper failure
+<div class="highlight"><pre><span></span><code>readCreateProcess : cabal-helper-wrapper failure
 </code></pre></div>
-</td></tr></table>
 
 <p>HIE tries to run <code>cabal</code> operations like on the non-Nix system. So it is
 a problem with detection of <code>nix-shell</code> environment, running inside it.</p>
