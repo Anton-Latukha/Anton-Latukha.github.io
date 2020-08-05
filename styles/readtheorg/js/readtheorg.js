@@ -1,24 +1,3 @@
-function collapse_toc_elements_on_click (nav_li_a){
-    /*
-      When an `a' element in the TOC is clicked, it's  parent
-      `li' element's active attribute is toggled. This causes
-      the element to toggle between minimized and maximized
-      states. The active attribute is documented in bootstrap.
-      https://getbootstrap.com/docs/4.0/components/navbar/#nav
-    */
-	$("#text-table-of-contents li").removeClass("active");
-    $(nav_li_a).parents().toggleClass("active");
-}
-
-$( document ).ready(function() {
-    // when the document is loaded and ready, bind the
-    // function `collapse_toc_elements_on_click' to the
-    // `a' elements in the table of contents.
-    $("#text-table-of-contents a").click(function() {
-	collapse_toc_elements_on_click(this);
-    });
-});
-
 $(function() {
     $('.note').before("<p class='admonition-title note'>Note</p>");
     $('.seealso').before("<p class='admonition-title seealso'>See also</p>");
@@ -52,9 +31,6 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
-	// Solving Issue #80
-	// Add home/index link in sidebar above TOC in readtheorg theme
-	$("#table-of-contents > h2").html($(".title").html());
     $('#text-table-of-contents ul').first().addClass('nav');
                                         // ScrollSpy also requires that we use
                                         // a Bootstrap nav component.
