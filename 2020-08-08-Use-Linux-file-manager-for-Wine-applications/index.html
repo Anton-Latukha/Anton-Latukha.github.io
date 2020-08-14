@@ -11,17 +11,17 @@
         <meta name="description" content="Official page of Anton Latukha">
       
       
-        <link rel="canonical" href="https://blog.latukha.com/NixOS-HIE-Emacs/">
+        <link rel="canonical" href="https://blog.latukha.com/2020-08-08-Use-Linux-file-manager-for-Wine-applications/">
       
       
         <meta name="author" content="Anton Latukha">
       
       <link rel="shortcut icon" href="../assets/images/favicon-min.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.6">
     
     
       
-        <title>Integrating NixOS/Nix, Haskell IDE Engine, Emacs - Latukha: Good day my friend!</title>
+        <title>Use Linux file manager for Wine applications - Latukha: Good day my friend!</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#integration-of-nixosnix-with-haskell-ide-engine-hie-and-emacs-spacemacs" class="md-skip">
+        <a href="#use-linux-file-manager-for-wine-applications" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Integrating NixOS/Nix, Haskell IDE Engine, Emacs
+              Use Linux file manager for Wine applications
             
           </span>
         </div>
@@ -153,16 +153,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." class="md-tabs__link">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -180,7 +178,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../2020-08-08-Use-linux-file-manager-for-Wine-applications" class="md-tabs__link">
           Articles
         </a>
       
@@ -277,12 +275,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Articles
@@ -304,115 +300,23 @@
           
           
 
-  
+
+  <li class="md-nav__item">
+    <a href="../2020-08-08-Use-linux-file-manager-for-Wine-applications" title="Use Linux file manager for Wine applications" class="md-nav__link">
+      Use Linux file manager for Wine applications
+    </a>
+  </li>
+
+        
+          
+          
+          
 
 
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Integrating NixOS/Nix, Haskell IDE Engine, Emacs
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Integrating NixOS/Nix, Haskell IDE Engine, Emacs" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../2019-08-02-NixOS-HIE-Emacs/" title="Integrating NixOS/Nix, Haskell IDE Engine, Emacs" class="md-nav__link">
       Integrating NixOS/Nix, Haskell IDE Engine, Emacs
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-install-the-cachix-httpsgithubcomcachixcachix" class="md-nav__link">
-    1. Install the Cachix: https://github.com/cachix/cachix
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds" class="md-nav__link">
-    2. Installation of HIE: https://github.com/infinisil/all-hies/#cached-builds
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Installation of HIE: https://github.com/infinisil/all-hies/#cached-builds">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-provide-cached-builds" class="md-nav__link">
-    2.1. Provide cached builds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22a-installation-on-nixos-distribution" class="md-nav__link">
-    2.2.a. Installation on NixOS distribution:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22b-installation-with-nix-package-manager" class="md-nav__link">
-    2.2.b. Installation with Nix package manager:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-emacs-spacemacs-configuration" class="md-nav__link">
-    3. Emacs (Spacemacs) configuration:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-open-the-haskell-file-from-a-project" class="md-nav__link">
-    4. Open the Haskell file from a project
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-be-pleased-writing-code" class="md-nav__link">
-    5. Be pleased writing code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-optional-debugging" class="md-nav__link">
-    6. (optional) Debugging
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -483,71 +387,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-install-the-cachix-httpsgithubcomcachixcachix" class="md-nav__link">
-    1. Install the Cachix: https://github.com/cachix/cachix
+  <a href="#straight-instructions" class="md-nav__link">
+    Straight instructions
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds" class="md-nav__link">
-    2. Installation of HIE: https://github.com/infinisil/all-hies/#cached-builds
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Installation of HIE: https://github.com/infinisil/all-hies/#cached-builds">
+    <nav class="md-nav" aria-label="Straight instructions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-provide-cached-builds" class="md-nav__link">
-    2.1. Provide cached builds
+  <a href="#1-backupd-wine-windows-registry" class="md-nav__link">
+    1. Backupd Wine "Windows" registry
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22a-installation-on-nixos-distribution" class="md-nav__link">
-    2.2.a. Installation on NixOS distribution:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22b-installation-with-nix-package-manager" class="md-nav__link">
-    2.2.b. Installation with Nix package manager:
+  <a href="#2-import-registry-changes" class="md-nav__link">
+    2. Import registry changes
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-emacs-spacemacs-configuration" class="md-nav__link">
-    3. Emacs (Spacemacs) configuration:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-open-the-haskell-file-from-a-project" class="md-nav__link">
-    4. Open the Haskell file from a project
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-be-pleased-writing-code" class="md-nav__link">
-    5. Be pleased writing code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-optional-debugging" class="md-nav__link">
-    6. (optional) Debugging
-  </a>
   
 </li>
       
@@ -563,7 +425,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mkdocs-blog/tree/master/docs/NixOS-HIE-Emacs.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mkdocs-blog/tree/master/docs/2020-08-08-Use-Linux-file-manager-for-Wine-applications.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -571,111 +433,34 @@
                   
                 
                 
-                <h1 id="integration-of-nixosnix-with-haskell-ide-engine-hie-and-emacs-spacemacs">Integration of NixOS/Nix with Haskell IDE Engine (HIE) and Emacs (Spacemacs)<a class="headerlink" href="#integration-of-nixosnix-with-haskell-ide-engine-hie-and-emacs-spacemacs" title="Permanent link">&para;</a></h1>
-<h2 id="1-install-the-cachix-httpsgithubcomcachixcachix">1. Install the Cachix: <a href="https://github.com/cachix/cachix">https://github.com/cachix/cachix</a><a class="headerlink" href="#1-install-the-cachix-httpsgithubcomcachixcachix" title="Permanent link">&para;</a></h2>
-<h2 id="2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds">2. Installation of HIE: <a href="https://github.com/infinisil/all-hies/#cached-builds">https://github.com/infinisil/all-hies/#cached-builds</a><a class="headerlink" href="#2-installation-of-hie-httpsgithubcominfinisilall-hiescached-builds" title="Permanent link">&para;</a></h2>
-<h3 id="21-provide-cached-builds">2.1. Provide cached builds<a class="headerlink" href="#21-provide-cached-builds" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>cachix use all-hies
+                <h1 id="use-linux-file-manager-for-wine-applications">Use Linux file manager for Wine applications<a class="headerlink" href="#use-linux-file-manager-for-wine-applications" title="Permanent link">&para;</a></h1>
+<p>Wine uses internal rudimentary file manager, it is very unefficient to use it.</p>
+<p>The simplest most effective solution is to run chosen default Desktop file manager.</p>
+<p>That solution is tricky to construct but straight-forward to implement.</p>
+<p>Solution is found in: <a href="https://askubuntu.com/a/1252225">askubuntu responce</a>.</p>
+<h2 id="straight-instructions">Straight instructions<a class="headerlink" href="#straight-instructions" title="Permanent link">&para;</a></h2>
+<h3 id="1-backupd-wine-windows-registry">1. Backupd Wine "Windows" registry<a class="headerlink" href="#1-backupd-wine-windows-registry" title="Permanent link">&para;</a></h3>
+<p>Run:
+<div class="highlight"><pre><span></span><code>wine regedit
+</code></pre></div></p>
+<p><img alt="" src="../images/Screenshot_20200808_212125.png" /></p>
+<p>Save registry.</p>
+<h3 id="2-import-registry-changes">2. Import registry changes<a class="headerlink" href="#2-import-registry-changes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\folder\shell]
+
+[HKEY_CLASSES_ROOT\folder\shell\open]
+
+[HKEY_CLASSES_ROOT\folder\shell\open\command]
+@=&quot;\&quot;C:\\windows\\system32\\winebrowser.exe\&quot; -nohome \&quot;%1\&quot;&quot;
+
+[-HKEY_CLASSES_ROOT\folder\shell\open\ddeexec]
 </code></pre></div>
 
-<h3 id="22a-installation-on-nixos-distribution">2.2.a. Installation on NixOS distribution:<a class="headerlink" href="#22a-installation-on-nixos-distribution" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">{</span> config<span class="p">,</span> pkgs<span class="p">,</span> <span class="o">...</span> <span class="p">}:</span>
-
-<span class="k">let</span>
-
-  <span class="ss">all-hies =</span> <span class="nb">import</span> <span class="p">(</span>fetchTarball <span class="s2">&quot;https://github.com/infinisil/all-hies/tarball/master&quot;</span><span class="p">)</span> <span class="p">{};</span>
-
-<span class="k">in</span> <span class="p">{</span>
-  environment<span class="o">.</span><span class="ss">systemPackages =</span> <span class="k">with</span> pkgs<span class="p">;</span> <span class="p">[</span>
-
-    <span class="p">(</span>all-hies<span class="o">.</span>selection <span class="p">{</span> <span class="ss">selector =</span> p<span class="p">:</span> <span class="p">{</span> <span class="k">inherit</span> <span class="p">(</span>p<span class="p">)</span> ghc865 ghc864<span class="p">;</span> <span class="p">};</span> <span class="p">})</span>
-
-  <span class="p">];</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>Insert your GHC versions.</p>
-<p>Switch to new configuration:</p>
-<div class="highlight"><pre><span></span><code>sudo -i nixos-rebuild <span class="k">switch</span>
-</code></pre></div>
-
-<h3 id="22b-installation-with-nix-package-manager">2.2.b. Installation with Nix package manager:<a class="headerlink" href="#22b-installation-with-nix-package-manager" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>nix-env -iA selection --arg selector <span class="s1">&#39;p: { inherit (p) ghc865 ghc864; }&#39;</span> -f <span class="s1">&#39;https://github.com/infinisil/all-hies/tarball/master&#39;</span>
-</code></pre></div>
-
-<p>Insert your GHC versions.</p>
-<h2 id="3-emacs-spacemacs-configuration">3. Emacs (Spacemacs) configuration:<a class="headerlink" href="#3-emacs-spacemacs-configuration" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nv">dotspacemacs-configuration-layers</span>
-<span class="o">&#39;</span><span class="p">(</span>
-
-  <span class="nv">auto-completion</span>
-
-  <span class="p">(</span><span class="nv">lsp</span> <span class="nb">:variables</span>
-       <span class="nv">default-nix-wrapper</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">args</span><span class="p">)</span>
-                             <span class="p">(</span><span class="nf">append</span>
-                              <span class="p">(</span><span class="nf">append</span> <span class="p">(</span><span class="nf">list</span> <span class="s">&quot;nix-shell&quot;</span> <span class="s">&quot;-I&quot;</span> <span class="s">&quot;.&quot;</span> <span class="s">&quot;--command&quot;</span> <span class="p">)</span>
-                                      <span class="p">(</span><span class="nf">list</span> <span class="p">(</span><span class="nf">mapconcat</span> <span class="ss">&#39;identity</span> <span class="nv">args</span> <span class="s">&quot; &quot;</span><span class="p">))</span>
-                                      <span class="p">)</span>
-                              <span class="p">(</span><span class="nf">list</span> <span class="p">(</span><span class="nv">nix-current-sandbox</span><span class="p">))</span>
-                              <span class="p">)</span>
-                             <span class="p">)</span>
-
-       <span class="nv">lsp-haskell-process-wrapper-function</span> <span class="nv">default-nix-wrapper</span>
-       <span class="p">)</span>
-
-  <span class="p">(</span><span class="nv">haskell</span> <span class="nb">:variables</span>
-           <span class="nv">haskell-enable-hindent</span> <span class="no">t</span>
-           <span class="nv">haskell-completion-backend</span> <span class="ss">&#39;lsp</span>
-           <span class="nv">haskell-process-type</span> <span class="ss">&#39;cabal-new-repl</span>
-           <span class="p">)</span>
-
-<span class="p">)</span>
-
-
- <span class="nv">dotspacemacs-additional-packages</span> <span class="o">&#39;</span><span class="p">(</span>
-                                    <span class="nv">direnv</span>
-                                    <span class="nv">nix-sandbox</span>
-                                    <span class="p">)</span>
-</code></pre></div>
-
-<p>Where:</p>
-<p><code>auto-complettion</code> configures <code>YASnippet</code>.</p>
-<p><code>nix-sandbox</code> (<a href="https://github.com/travisbhartwell/nix-emacs">https://github.com/travisbhartwell/nix-emacs</a>) has a
-great helper functions. Using <code>nix-current-sandbox</code> function in
-<code>default-nix-wrapper</code> that used to properly configure
-<code>lsp-haskell-process-wrapper-function</code>.</p>
-<p>Configuration of the <code>lsp-haskell-process-wrapper-function
-default-nix-wrapper</code> is a key for HIE to work in <code>nix-shell</code></p>
-<p>Inside <code>nix-shell</code> the <code>haskell-process-type 'cabal-new-repl</code> is
-required.</p>
-<p>/Configuration was reassembled from:
-<a href="https://github.com/emacs-lsp/lsp-haskell/blob/8f2dbb6e827b1adce6360c56f795f29ecff1d7f6/lsp-haskell.el#L57">https://github.com/emacs-lsp/lsp-haskell/blob/8f2dbb6e827b1adce6360c56f795f29ecff1d7f6/lsp-haskell.el#L57</a>
-&amp; its authors config:
-<a href="https://github.com/sevanspowell/dotfiles/blob/master/.spacemacs">https://github.com/sevanspowell/dotfiles/blob/master/.spacemacs</a> /</p>
-<p>Refresh Emasc.</p>
-<h2 id="4-open-the-haskell-file-from-a-project">4. Open the Haskell file from a project<a class="headerlink" href="#4-open-the-haskell-file-from-a-project" title="Permanent link">&para;</a></h2>
-<p>Open system monitor, observe the process of environment establishing,
-packages loading &amp; compiling.</p>
-<h2 id="5-be-pleased-writing-code">5. Be pleased writing code<a class="headerlink" href="#5-be-pleased-writing-code" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="../images/Screenshot_20190727_134446.png" /></p>
-<p>Now, the powers of the Haskell, Nix &amp; Emacs combined. It's fully in your
-hands now. Be cautious - you can change the world.</p>
-<h2 id="6-optional-debugging">6. (optional) Debugging<a class="headerlink" href="#6-optional-debugging" title="Permanent link">&para;</a></h2>
-<ol>
-<li>If recieving sort-of:</li>
-</ol>
-<!-- end list -->
-
-<div class="highlight"><pre><span></span><code>readCreateProcess : cabal-helper-wrapper failure
-</code></pre></div>
-
-<p>HIE tries to run <code>cabal</code> operations like on the non-Nix system. So it is
-a problem with detection of <code>nix-shell</code> environment, running inside it.</p>
-<ol>
-<li>If HIE keeps getting ready, failing &amp; restarting - check that the
-    projects <code>ghc --version</code> is declared in your <code>all-hie</code> NixOS
-    configuration.</li>
-</ol>
+<p><a href="../assets/file/force-linux-file-manager.reg">force-linux-file-manager.reg</a></p>
+<p><img alt="" src="../assets/image/Screenshot_20200808_213340.png" /></p>
+<p>Done.</p>
                 
               
               
@@ -684,7 +469,7 @@ a problem with detection of <code>nix-shell</code> environment, running inside i
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://blog.latukha.com/NixOS-HIE-Emacs/",this.page.identifier="/NixOS-HIE-Emacs/"};!function(){var e=document,i=e.createElement("script");i.src="//blog-latukha-com.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://blog.latukha.com/2020-08-08-Use-Linux-file-manager-for-Wine-applications/",this.page.identifier="/2020-08-08-Use-Linux-file-manager-for-Wine-applications/"};!function(){var e=document,i=e.createElement("script");i.src="//blog-latukha-com.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -695,47 +480,12 @@ a problem with detection of <code>nix-shell</code> environment, running inside i
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../haskell-notes.html" title="Book "Fundamental Haskell"" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Book "Fundamental Haskell"
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../2017-05-04-Restore-of-deleted-LVM-%28Advanced%29/" title="Restore of deleted LVM (Advanced)" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Restore of deleted LVM (Advanced)
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            2016-2019 Anton Latukha, Creative Commons ShareAlike
+            2016-2020 Anton Latukha, Creative Commons ShareAlike
           </div>
         
         Made with
@@ -826,15 +576,15 @@ a problem with detection of <code>nix-shell</code> environment, running inside i
       
     </div>
     
-      <script src="../assets/javascripts/vendor.c3dc8c49.min.js"></script>
-      <script src="../assets/javascripts/bundle.30071cf1.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../assets/javascripts/bundle.b7ed72fe.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: ["tabs", "instant"],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8e2cddea.min.js"
+            worker: "../assets/javascripts/worker/search.fae956e7.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
